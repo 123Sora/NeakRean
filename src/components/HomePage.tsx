@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronRight, Search, Filter } from 'lucide-react';
-import TypewriterText from '../components/TypeWriterText';
+// import TypewriterText from '../components/TypeWriterText';
 
 type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'mysql' | 'nodejs' | 'expressjs';
 
@@ -60,15 +60,15 @@ function HomePage({ onSelectCourse, courses }: HomePageProps) {
       <div className="bg-gradient-to-br from-blue-600 to-teal-600 rounded-2xl p-8 text-white">
         <div className="max-w-2xl">
           <h1 className="text-3xl font-bold mb-4">ស្វាគមន៍មកកាន់ {' '}
-            {/* <span className='font-Moulpali text-green-300'>អ្នករៀន | NeakRean</span> */}
-             <TypewriterText
+            <span className='font-Moulpali text-green-300'>អ្នករៀន | NeakRean</span>
+             {/* <TypewriterText
               text="អ្នករៀន | NeakRean"
               speed={100}
               delay={1000}
               loop= {true}
                // Adjust typing speed (milliseconds per character)
               className="font-Moulpali text-green-300"
-            />
+            /> */}
           </h1>
           <p className="text-lg opacity-90 mb-6">
             រៀន Programming Languages និងការអភិវឌ្ឍន៍គេហទំព័រជាមួយមេរៀនដែល​លម្អិត ងាយស្រួលយល់ និងងាយស្រួលរៀន ជាភាសាខ្មែរ។ 

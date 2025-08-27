@@ -15,10 +15,12 @@ import GitLabCourse from './components/courses/gitlab/GitLabCourse';
 import MySQLCourse from './components/courses/mysql/MYSQLCourse';
 import NodeJSCourse from './components/courses/nodejs/NodeJSCourse';
 import ExpressJSCourse from './components/courses/expressjs/ExpressJSCourse';
+import PHPCourse from './components/courses/php/PHPCourse';
+import LaravelCourse from './components/courses/laravel/LaravelCourse';
 import AboutUs from './components/AboutUs';
 import SecurityProvider from './components/SecurityProvider'; 
 
-type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'mysql' | 'nodejs' | 'expressjs';
+type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'mysql' | 'nodejs' | 'expressjs' | 'php' | 'laravel' ;
 
 // Define the Course interface to match HomePage expectations
 interface Course {
@@ -177,6 +179,26 @@ function App() {
       duration: '4-6 ម៉ោង',
       level: 'មធ្យម',
     },
+    {
+      id: 'php',
+      name: 'PHP',
+      khmer: 'ភាសា PHP',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+      color: 'bg-indigo-100',
+      lessons: 18,
+      duration: '6-8 ម៉ោង',
+      level: 'មធ្យម',
+    },
+    {
+      id: 'laravel',
+      name: 'Laravel',
+      khmer: 'Laravel Framework',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg',
+      color: 'bg-red-100',
+      lessons: 20,
+      duration: '8-10 ម៉ោង',
+      level: 'មធ្យម',
+    },
   ];
 
   const renderCurrentCourse = () => {
@@ -213,6 +235,10 @@ function App() {
         return <NodeJSCourse />;
       case 'expressjs':
         return <ExpressJSCourse />;
+      case 'php': 
+        return <PHPCourse />;
+      case 'laravel':
+        return <LaravelCourse />;
       default:
         return <HomePage onSelectCourse={setCurrentCourse} courses={courses} />;
     }

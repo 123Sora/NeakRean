@@ -2,7 +2,7 @@ import React from 'react';
 import { ChevronRight, Search, Filter } from 'lucide-react';
 // import TypewriterText from '../components/TypeWriterText';
 
-type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'mysql' | 'nodejs' | 'expressjs';
+type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'mysql' | 'nodejs' | 'expressjs' | 'php' | 'laravel';
 
 interface Course {
   id: CourseType;
@@ -29,14 +29,14 @@ function HomePage({ onSelectCourse, courses }: HomePageProps) {
   const categories = [
     { id: 'all', name: 'ទាំងអស់', count: courses.length },
     { id: 'frontend', name: 'Frontend', count: 6 },
-    { id: 'backend', name: 'Backend', count: 3 },
+    { id: 'backend', name: 'Backend', count: 4 },
     { id: 'database', name: 'Database', count: 1 },
     { id: 'tools', name: 'Tools', count: 4 },
   ];
 
   const getCourseCategory = (courseId: string) => {
     const frontendCourses = ['html', 'css', 'bootstrap', 'tailwind', 'javascript', 'react', 'vue', 'nextjs'];
-    const backendCourses = ['nodejs', 'expressjs'];
+    const backendCourses = ['nodejs', 'expressjs', 'php', 'laravel'];
     const databaseCourses = ['mysql'];
     const toolsCourses = ['postman', 'github', 'gitlab'];
 

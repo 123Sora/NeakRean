@@ -280,14 +280,14 @@ function PHPCourse() {
             <h4 className="font-medium text-red-700 mb-2">ភាសាខ្មែរ (Khmer) 🇰🇭</h4>
             <ul className="space-y-2 text-red-600">
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/playlist?list=PLuEdNLfGOtnV5C07xX0c3q2mC0Z9z3V6N" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">Khode Academy - PHP Course</span>
+                <a href="https://www.youtube.com/playlist?list=PLbDU2mc4UC51AkeAxmpgL3CB-I9EfCFxd" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Jai Code - PHP Course</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/playlist?list=PLvX1-UB1rBNPplEPZeKMpsH0AC3r7-mG1" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">តំបន់អាយធី - IT Zone - PHP Tutorial</span>
+                <a href="https://www.youtube.com/playlist?list=PLuEdNLfGOtnVsMxiXgZUuvqFKIavgZ-Bv" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Khode Academy - PHP Tutorial</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>
@@ -297,20 +297,20 @@ function PHPCourse() {
             <h4 className="font-medium text-red-700 mb-2">ភាសាអង់គ្លេស (English)</h4>
             <ul className="space-y-2 text-red-600">
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/playlist?list=PL0eyrZgxdwhxng0aClS4s7ewP4uA9krA7" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">Program With Gio - PHP For Beginners</span>
+                <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9gksOX3Kd9KPo-O68ncT05o" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Net Ninja - PHP Tutorial for Beginners</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/playlist?list=PLr3d3QYzkw2xabQRUpc6M0a4hSdbknZlc" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                <a href="https://www.youtube.com/playlist?list=PLr3d3QYzkw2xabQRUpcZ_IBk9W50M9pe-" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Program With Gio - Full PHP Tutorial</span>
+                  <ChevronRight className="w-4 h-4 ml-1" />
+                </a>
+              </li>
+              <li className="flex items-center space-x-2">
+                <a href="https://www.youtube.com/watch?v=BUCiSSyIGGU" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
                   <span className="text-sm">Traversy Media - PHP Crash Course</span>
-                  <ChevronRight className="w-4 h-4 ml-1" />
-                </a>
-              </li>
-              <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/playlist?list=PLillGF-Rfqbap2YV7Z0CUc2B-yOqDq69d" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">freeCodeCamp - PHP Full Course</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>

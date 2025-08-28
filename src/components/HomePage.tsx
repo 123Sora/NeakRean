@@ -2,7 +2,7 @@ import React from 'react';
 import { ChevronRight, Search, Filter } from 'lucide-react';
 // import TypewriterText from '../components/TypeWriterText';
 
-type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'mysql' | 'nodejs' | 'expressjs' | 'php' | 'laravel';
+type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'mysql' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology'; ;
 
 interface Course {
   id: CourseType;
@@ -28,20 +28,26 @@ function HomePage({ onSelectCourse, courses }: HomePageProps) {
 
   const categories = [
     { id: 'all', name: 'ទាំងអស់', count: courses.length },
+    { id: 'concepts', name: 'Concepts', count: 2 },
     { id: 'frontend', name: 'Frontend', count: 6 },
     { id: 'backend', name: 'Backend', count: 4 },
+    { id: 'mobile', name: 'Mobile', count: 6 },
     { id: 'database', name: 'Database', count: 1 },
     { id: 'tools', name: 'Tools', count: 4 },
   ];
 
   const getCourseCategory = (courseId: string) => {
+    const conceptCourses = ['concept', 'terminology'];
     const frontendCourses = ['html', 'css', 'bootstrap', 'tailwind', 'javascript', 'react', 'vue', 'nextjs'];
     const backendCourses = ['nodejs', 'expressjs', 'php', 'laravel'];
+    const mobileCourses = ['swift', 'kotlin', 'flutter', 'reactnative', 'ionic', 'xamarin'];
     const databaseCourses = ['mysql'];
     const toolsCourses = ['postman', 'github', 'gitlab'];
 
+    if (conceptCourses.includes(courseId)) return 'concepts';
     if (frontendCourses.includes(courseId)) return 'frontend';
     if (backendCourses.includes(courseId)) return 'backend';
+    if (mobileCourses.includes(courseId)) return 'mobile';
     if (databaseCourses.includes(courseId)) return 'database';
     if (toolsCourses.includes(courseId)) return 'tools';
     return 'all';
@@ -60,7 +66,8 @@ function HomePage({ onSelectCourse, courses }: HomePageProps) {
       <div className="bg-gradient-to-br from-blue-600 to-teal-600 rounded-2xl p-8 text-white">
         <div className="max-w-2xl">
           <h1 className="text-3xl font-bold mb-4">ស្វាគមន៍មកកាន់ {' '}
-            <span className='font-Moulpali text-green-300'>អ្នករៀន | NeakRean</span>
+            {/* <span className='font-Moulpali text-green-300'>អ្នករៀន | NeakRean</span> */}
+            <span className=' text-green-300'>អ្នករៀន | NeakRean</span>
              {/* <TypewriterText
               text="អ្នករៀន | NeakRean"
               speed={100}

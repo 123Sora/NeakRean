@@ -29,18 +29,18 @@ import ConceptLesson5_2Content from '../concept/lessons/ConceptLesson5_2'; // Ob
 import ConceptLesson5_3Content from '../concept/lessons/ConceptLesson5_3'; // Iterating Data Structures
 
 // --- ផ្នែកទី ៦: Problem Solving Techniques ---
-// import ConceptLesson6_1Content from '../concept/lessons/ConceptLesson6_1'; // វិធីសាស្ត្រដោះស្រាយបញ្ហា
-// import ConceptLesson6_2Content from '../concept/lessons/ConceptLesson6_2'; // Debugging Basics
-// import ConceptLesson6_3Content from '../concept/lessons/ConceptLesson6_3'; // Code Optimization
+import ConceptLesson6_1Content from '../concept/lessons/ConceptLesson6_1'; // វិធីសាស្ត្រដោះស្រាយបញ្ហា
+import ConceptLesson6_2Content from '../concept/lessons/ConceptLesson6_2'; // Debugging Basics
+import ConceptLesson6_3Content from '../concept/lessons/ConceptLesson6_3'; // Code Optimization
 
 // --- ផ្នែកទី ៧: Algorithms និង Logic ---
-// import ConceptLesson7_1Content from '../concept/lessons/ConceptLesson7_1'; // ក្បួនដោះស្រាយបញ្ហាមូលដ្ឋាន
-// import ConceptLesson7_2Content from '../concept/lessons/ConceptLesson7_2'; // Sorting Algorithms
-// import ConceptLesson7_3Content from '../concept/lessons/ConceptLesson7_3'; // Searching Algorithms
+import ConceptLesson7_1Content from '../concept/lessons/ConceptLesson7_1'; // ក្បួនដោះស្រាយបញ្ហាមូលដ្ឋាន
+import ConceptLesson7_2Content from '../concept/lessons/ConceptLesson7_2'; // Sorting Algorithms
+import ConceptLesson7_3Content from '../concept/lessons/ConceptLesson7_3'; // Searching Algorithms
 
 // --- ផ្នែកទី ៨: Best Practices សម្រាប់ Beginners ---
-// import ConceptLesson8_1Content from '../concept/lessons/ConceptLesson8_1'; // Code Readability
-// import ConceptLesson8_2Content from '../concept/lessons/ConceptLesson8_2'; // Commenting and Documentation
+import ConceptLesson8_1Content from '../concept/lessons/ConceptLesson8_1'; // Code Readability
+import ConceptLesson8_2Content from '../concept/lessons/ConceptLesson8_2'; // Commenting and Documentation
 
 function ConceptCourse() {
   const [selectedLesson, setSelectedLesson] = useState<string | null>(null);
@@ -96,26 +96,26 @@ function ConceptCourse() {
       id: 'section-6',
       title: 'ផ្នែកទី ៦: Problem Solving Techniques',
       lessons: [
-        // { id: 'concept-lesson-6-1', ...ConceptLesson6_1Content },
-        // { id: 'concept-lesson-6-2', ...ConceptLesson6_2Content },
-        // { id: 'concept-lesson-6-3', ...ConceptLesson6_3Content },
+        { id: 'concept-lesson-6-1', ...ConceptLesson6_1Content },
+        { id: 'concept-lesson-6-2', ...ConceptLesson6_2Content },
+        { id: 'concept-lesson-6-3', ...ConceptLesson6_3Content },
       ] as Lesson[],
     },
     {
       id: 'section-7',
       title: 'ផ្នែកទី ៧: Algorithms និង Logic',
       lessons: [
-        // { id: 'concept-lesson-7-1', ...ConceptLesson7_1Content },
-        // { id: 'concept-lesson-7-2', ...ConceptLesson7_2Content },
-        // { id: 'concept-lesson-7-3', ...ConceptLesson7_3Content },
+        { id: 'concept-lesson-7-1', ...ConceptLesson7_1Content },
+        { id: 'concept-lesson-7-2', ...ConceptLesson7_2Content },
+        { id: 'concept-lesson-7-3', ...ConceptLesson7_3Content },
       ] as Lesson[],
     },
     {
       id: 'section-8',
       title: 'ផ្នែកទី ៨: Best Practices សម្រាប់ Beginners',
       lessons: [
-        // { id: 'concept-lesson-8-1', ...ConceptLesson8_1Content },
-        // { id: 'concept-lesson-8-2', ...ConceptLesson8_2Content },
+        { id: 'concept-lesson-8-1', ...ConceptLesson8_1Content },
+        { id: 'concept-lesson-8-2', ...ConceptLesson8_2Content },
       ] as Lesson[],
     },
   ];

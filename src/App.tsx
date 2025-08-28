@@ -17,10 +17,16 @@ import NodeJSCourse from './components/courses/nodejs/NodeJSCourse';
 import ExpressJSCourse from './components/courses/expressjs/ExpressJSCourse';
 import PHPCourse from './components/courses/php/PHPCourse';
 import LaravelCourse from './components/courses/laravel/LaravelCourse';
+import FlutterCourse from './components/courses/flutter/FlutterCourse';
+import SwiftCourse from './components/courses/swift/SwiftCourse';
+import KotlinCourse from './components/courses/kotlin/KotlinCourse';
+import ConceptCourse from './components/courses/concept/ConceptCourse';
+
+
 import AboutUs from './components/AboutUs';
 import SecurityProvider from './components/SecurityProvider'; 
 
-type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'mysql' | 'nodejs' | 'expressjs' | 'php' | 'laravel' ;
+type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'mysql' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology'  ;
 
 // Define the Course interface to match HomePage expectations
 interface Course {
@@ -199,6 +205,87 @@ function App() {
       duration: '8-10 ម៉ោង',
       level: 'មធ្យម',
     },
+    {
+      id: 'swift',
+      name: 'Swift',
+      khmer: 'ភាសា Swift',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg',
+      color: 'bg-orange-200',
+      lessons: 18,
+      duration: '6-8 ម៉ោង',
+      level: 'មធ្យម',
+    },
+    {
+      id: 'kotlin',
+      name: 'Kotlin',
+      khmer: 'ភាសា Kotlin',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg',
+      color: 'bg-purple-200',
+      lessons: 16,
+      duration: '5-7 ម៉ោង',
+      level: 'មធ្យម',
+    },
+    {
+      id: 'flutter',
+      name: 'Flutter',
+      khmer: 'Flutter Framework',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg',
+      color: 'bg-blue-200',
+      lessons: 20,
+      duration: '8-10 ម៉ោង',
+      level: 'មធ្យម',
+    },
+    {
+      id: 'reactnative',
+      name: 'React Native',
+      khmer: 'React Native Framework',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+      color: 'bg-cyan-200',
+      lessons: 18,
+      duration: '7-9 ម៉ោង',
+      level: 'មធ្យម',
+    },
+    {
+      id: 'ionic',
+      name: 'Ionic',
+      khmer: 'Ionic Framework',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg',
+      color: 'bg-blue-100',
+      lessons: 14,
+      duration: '5-7 ម៉ោង',
+      level: 'មធ្យម',
+    },
+    {
+      id: 'xamarin',
+      name: 'Xamarin',
+      khmer: 'Xamarin Framework',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xamarin/xamarin-original.svg',
+      color: 'bg-blue-300',
+      lessons: 16,
+      duration: '6-8 ម៉ោង',
+      level: 'មធ្យម',
+    },
+    {
+    id: 'concept',
+    name: 'Concept',
+    khmer: 'គំនិត',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/readme/readme-original.svg',
+    color: 'bg-gray-100',
+    lessons: 10,
+    duration: '3-5 ម៉ោង',
+    level: 'បឋម',
+    
+  },
+  {
+    id: 'terminology',
+    name: 'Terminology',
+    khmer: 'ពាក្យបច្ចេកទេស',
+    icon: 'https://www.vectorlogo.zone/logos/docusaurus/docusaurus-icon.svg',
+    color: 'bg-gray-200',
+    lessons: 10,
+    duration: '3-5 ម៉ោង',
+    level: 'បឋម',
+  }
   ];
 
   const renderCurrentCourse = () => {
@@ -206,7 +293,9 @@ function App() {
       case 'home':
         return <HomePage onSelectCourse={setCurrentCourse} courses={courses} />;
       case 'about':
-        return <AboutUs />;
+        return <AboutUs />
+      case 'concept':
+        return <ConceptCourse />;
       case 'html':
         return <HTMLCourse />;
       case 'css':
@@ -239,6 +328,12 @@ function App() {
         return <PHPCourse />;
       case 'laravel':
         return <LaravelCourse />;
+      case 'swift':
+        return <SwiftCourse />;
+      case 'kotlin':
+        return <KotlinCourse />;
+      case 'flutter':
+        return <FlutterCourse />;
       default:
         return <HomePage onSelectCourse={setCurrentCourse} courses={courses} />;
     }

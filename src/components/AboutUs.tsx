@@ -22,7 +22,7 @@ function AboutUs() {
                 ភាសាខ្មែរ
               </h2>
              <p className="text-lg leading-relaxed">
-              <strong className='font-Moulpali text-green-600'>អ្នករៀន | NeakRean</strong> គឺជាគេហទំព័រដែលបានផ្ដល់ជូននូវមេរៀនជាច្រើនជាភាសាខ្មែរនៅក្នុងជំនាញពត៌មានវិទ្យា  
+              <strong className='text-green-600'>អ្នករៀន | NeakRean</strong> គឺជាគេហទំព័រដែលបានផ្ដល់ជូននូវមេរៀនជាច្រើនជាភាសាខ្មែរនៅក្នុងជំនាញពត៌មានវិទ្យា  
               ដើម្បីជាជំនួយដល់អ្នកសិក្សាកម្ពុជា 🇰🇭 ដោយឥតគិតថ្លៃ។ គេហទំព័រនេះត្រូវបានបង្កើតឡើងដោយក្មេងស្រីម្នាក់ 👩‍💻 ដែលស្រលាញ់ចូលចិត្តបច្ចេកវិទ្យា 
               ហើយចង់ចែករំលែក ចង់ចេះចង់ដឹងបន្ថែម ទាក់ទងនឹងបច្ចេកវិទ្យា។
             </p>
@@ -34,7 +34,7 @@ function AboutUs() {
                 English
               </h2>
               <p className="text-lg leading-relaxed">
-                <strong className='font-Moulpali text-green-600'>អ្នករៀន | NeakRean</strong> is a website offering many lessons in Khmer within the field of information technology  
+                <strong className='text-green-600'>អ្នករៀន | NeakRean</strong> is a website offering many lessons in Khmer within the field of information technology  
                 to support Cambodian students 🇰🇭 for free. This website was created by a young woman 👩‍💻 who loves technology
                 and wants to share and learn more about technology.
               </p>
@@ -130,7 +130,7 @@ function AboutUs() {
       </div> */}
 
       {/* Our Goals */}
-      {/* <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-8 border">
+      <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-8 border">
         <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
           គោលដៅរបស់យើង
         </h2>
@@ -143,31 +143,31 @@ function AboutUs() {
             <div>
               <h3 className="font-semibold text-gray-900 mb-1">ធ្វើឱ្យការរៀនកម្មវិធីងាយស្រួល</h3>
               <p className="text-gray-700">
-                ផ្តល់មេរៀនដែលងាយយល់ ជាមួយឧទាហរណ៍ច្បាស់លាស់ និងលំហាត់អនុវត្តន៍ជាច្រើន
+                ផ្តល់មេរៀនដែលងាយយល់ ជាមួយឧទាហរណ៍ច្បាស់លាស់ និងលំហាត់អនុវត្តន៍ជាច្រើនជាភាសាខ្មែរ
               </p>
             </div>
-          </div> */}
+          </div> 
 
-          {/* <div className="flex items-start space-x-4">
+          <div className="flex items-start space-x-4">
             <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center text-sm font-semibold mt-1">
               2
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 mb-1">បង្កើតឱកាសការងារ</h3>
+              <h3 className="font-semibold text-gray-900 mb-1">ផ្តល់ធនធានជាភាសាខ្មែរ</h3>
               <p className="text-gray-700">
-                ជួយសិស្សអាចរកការងារក្នុងវិស័យ IT ឬបង្កើតអាជីវកម្មផ្ទាល់ខ្លួន
+                បង្កើតមេរៀន និងឯកសារសិក្សាជាភាសាខ្មែរដ៏សម្បូរបែប ដើម្បីជួយសិស្សរៀនបច្ចេកវិទ្យាបានកាន់តែងាយស្រួល។
               </p>
             </div>
-          </div> */}
+          </div>
 
-          {/* <div className="flex items-start space-x-4">
+         <div className="flex items-start space-x-4">
             <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center text-sm font-semibold mt-1">
               3
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 mb-1">អភិវឌ្ឍន៍ប្រទេសជាតិ</h3>
+              <h3 className="font-semibold text-gray-900 mb-1">លើកកម្ពស់ភាសាខ្មែរ</h3>
               <p className="text-gray-700">
-                រួមចំណែកក្នុងការអភិវឌ្ឍន៍ប្រទេសកម្ពុជាឱ្យក្លាយជាប្រទេសឌីជីថល
+                លើកកម្ពស់ការប្រើប្រាស់ភាសាខ្មែរក្នុងការអប់រំបច្ចេកវិទ្យា ដើម្បីរក្សាអត្តសញ្ញាណវប្បធម៌។
               </p>
             </div>
           </div>
@@ -184,7 +184,7 @@ function AboutUs() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Contact Information */}
       {/* <div className="bg-white rounded-xl shadow-sm border p-6 text-center">

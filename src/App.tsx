@@ -21,12 +21,14 @@ import FlutterCourse from './components/courses/flutter/FlutterCourse';
 import SwiftCourse from './components/courses/swift/SwiftCourse';
 import KotlinCourse from './components/courses/kotlin/KotlinCourse';
 import ConceptCourse from './components/courses/concept/ConceptCourse';
-
+import TerminologyCourse from './components/courses/terminology/TerminologyCourse';
+import MIScourse from './components/courses/mis/MISCourse';
+import SEcourse from './components/courses/se/SoftwareEngineeringCourse'
 
 import AboutUs from './components/AboutUs';
 import SecurityProvider from './components/SecurityProvider'; 
 
-type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'mysql' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology'  ;
+type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'mysql' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology' | 'mis' | 'se' ;
 
 // Define the Course interface to match HomePage expectations
 interface Course {
@@ -268,8 +270,8 @@ function App() {
     {
     id: 'concept',
     name: 'Concept',
-    khmer: 'គំនិត',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/readme/readme-original.svg',
+    khmer: 'Concept programming',
+    icon: 'https://icons.getbootstrap.com/assets/icons/lightbulb-fill.svg',
     color: 'bg-gray-100',
     lessons: 10,
     duration: '3-5 ម៉ោង',
@@ -285,6 +287,26 @@ function App() {
     lessons: 10,
     duration: '3-5 ម៉ោង',
     level: 'បឋម',
+  }, 
+  {
+    id: 'mis',
+    name: 'Management Information Systems',
+    khmer: 'ប្រព័ន្ធព័ត៌មានគ្រប់គ្រង',
+    icon: 'https://www.vectorlogo.zone/logos/microsoft/microsoft-icon.svg',
+    color: 'bg-blue-400',
+    lessons: 14,
+    duration: '5-7 ម៉ោង',
+    level: 'មធ្យម',
+  },
+  {
+    id: 'se',
+    name: 'Software Engineering Management',
+    khmer: 'ការគ្រប់គ្រងវិស្វកម្មកម្មវិធី',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codepen/codepen-original.svg',
+    color: 'bg-green-200',
+    lessons: 18,
+    duration: '6-8 ម៉ោង',
+    level: 'មធ្យម',
   }
   ];
 
@@ -296,6 +318,8 @@ function App() {
         return <AboutUs />
       case 'concept':
         return <ConceptCourse />;
+      case 'terminology':
+        return <TerminologyCourse />;
       case 'html':
         return <HTMLCourse />;
       case 'css':
@@ -334,6 +358,10 @@ function App() {
         return <KotlinCourse />;
       case 'flutter':
         return <FlutterCourse />;
+      case 'mis':
+        return <MIScourse />;
+      case 'se':
+        return <SEcourse />;
       default:
         return <HomePage onSelectCourse={setCurrentCourse} courses={courses} />;
     }

@@ -2,7 +2,7 @@ import React from 'react';
 import { ChevronRight, Search, Filter } from 'lucide-react';
 // import TypewriterText from '../components/TypeWriterText';
 
-type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'mysql' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology'; ;
+type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'mysql' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology' | 'mis' | 'se'; 
 
 interface Course {
   id: CourseType;
@@ -34,6 +34,7 @@ function HomePage({ onSelectCourse, courses }: HomePageProps) {
     { id: 'mobile', name: 'Mobile', count: 6 },
     { id: 'database', name: 'Database', count: 1 },
     { id: 'tools', name: 'Tools', count: 4 },
+    { id: 'management', name: 'Management', count: 2 },
   ];
 
   const getCourseCategory = (courseId: string) => {
@@ -42,7 +43,8 @@ function HomePage({ onSelectCourse, courses }: HomePageProps) {
     const backendCourses = ['nodejs', 'expressjs', 'php', 'laravel'];
     const mobileCourses = ['swift', 'kotlin', 'flutter', 'reactnative', 'ionic', 'xamarin'];
     const databaseCourses = ['mysql'];
-    const toolsCourses = ['postman', 'github', 'gitlab'];
+    const toolsCourses = ['postman', 'github', 'gitlab']; 
+    const managementCourses = ['mis', 'se'];
 
     if (conceptCourses.includes(courseId)) return 'concepts';
     if (frontendCourses.includes(courseId)) return 'frontend';
@@ -50,6 +52,7 @@ function HomePage({ onSelectCourse, courses }: HomePageProps) {
     if (mobileCourses.includes(courseId)) return 'mobile';
     if (databaseCourses.includes(courseId)) return 'database';
     if (toolsCourses.includes(courseId)) return 'tools';
+    if (managementCourses.includes(courseId)) return 'management';
     return 'all';
   };
 
@@ -61,13 +64,13 @@ function HomePage({ onSelectCourse, courses }: HomePageProps) {
   });
 
   return (
-    <div className="p-6 space-y-8">
+    <div className="p-3 sm:p-6 space-y-6 sm:space-y-8">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-blue-600 to-teal-600 rounded-2xl p-8 text-white">
+      <div className="bg-gradient-to-br from-blue-600 to-teal-600 rounded-xl sm:rounded-2xl p-4 sm:p-8 text-white">
         <div className="max-w-2xl">
-          <h1 className="text-3xl font-bold mb-4">ស្វាគមន៍មកកាន់ {' '}
+          <h1 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">ស្វាគមន៍មកកាន់ {' '}
             {/* <span className='font-Moulpali text-green-300'>អ្នករៀន | NeakRean</span> */}
-            <span className=' text-green-300'>អ្នករៀន | NeakRean</span>
+            <span className='text-2xl sm:text-3xl text-green-300'>អ្នករៀន | NeakRean</span>
              {/* <TypewriterText
               text="អ្នករៀន | NeakRean"
               speed={100}
@@ -108,7 +111,7 @@ function HomePage({ onSelectCourse, courses }: HomePageProps) {
           
           {/* Filter Dropdown */}
           <div className="relative">
-            <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+            <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 sm:w-5 sm:h-5" />
             <select
               value={selectedFilter}
               onChange={(e) => setSelectedFilter(e.target.value)}

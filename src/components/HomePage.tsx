@@ -115,7 +115,7 @@ function HomePage({ onSelectCourse, courses }: HomePageProps) {
             <select
               value={selectedFilter}
               onChange={(e) => setSelectedFilter(e.target.value)}
-              className="pl-10 pr-8 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white min-w-[150px]"
+              className="pl-9 sm:pl-10 pr-6 sm:pr-8 py-2 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white min-w-[140px] sm:min-w-[150px]"
             >
               {categories.map(category => (
                 <option key={category.id} value={category.id}>
@@ -128,12 +128,12 @@ function HomePage({ onSelectCourse, courses }: HomePageProps) {
         </div>
 
         {/* Filter Tags */}
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-1 sm:gap-2">
           {categories.map(category => (
             <button
               key={category.id}
               onClick={() => setSelectedFilter(category.id)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+              className={`px-2 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-colors ${
                 selectedFilter === category.id
                   ? 'bg-blue-100 text-blue-700 border border-blue-200'
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'

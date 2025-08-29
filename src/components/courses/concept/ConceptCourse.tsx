@@ -152,7 +152,7 @@ function ConceptCourse() {
         <div className="flex items-center space-x-4 mb-4">
           <div className="w-16 h-16 bg-white bg-opacity-20 rounded-xl flex items-center justify-center p-3">
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/readme/readme-original.svg"
+              src="https://icons.getbootstrap.com/assets/icons/lightbulb-fill.svg"
               alt="Programming Concepts"
               className="w-full h-full object-contain"
             />

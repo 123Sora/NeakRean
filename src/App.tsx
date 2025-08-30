@@ -20,6 +20,7 @@ import LaravelCourse from './components/courses/laravel/LaravelCourse';
 import FlutterCourse from './components/courses/flutter/FlutterCourse';
 import SwiftCourse from './components/courses/swift/SwiftCourse';
 import KotlinCourse from './components/courses/kotlin/KotlinCourse';
+import ReactNativeCourse from './components/courses/reactnative/ReactnativeCourse';
 import ConceptCourse from './components/courses/concept/ConceptCourse';
 import TerminologyCourse from './components/courses/terminology/TerminologyCourse';
 import AboutUs from './components/AboutUs';
@@ -355,6 +356,9 @@ function App() {
         return <KotlinCourse />;
       case 'flutter':
         return <FlutterCourse />;
+      case 'reactnative':
+        return <ReactNativeCourse />;
+
       // case 'mis':
       //   return <MIScourse />;
       // case 'se':

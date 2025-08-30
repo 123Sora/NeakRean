@@ -328,20 +328,20 @@ function FlutterCourse() {
             <h4 className="font-medium text-red-700 mb-2">ភាសាខ្មែរ (Khmer) 🇰🇭</h4>
             <ul className="space-y-2 text-red-600">
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/playlist?list=PLbDU2mc4UC51AkeAxmpgL3CB-I9EfCFxd" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">NIMTo DevStack - Mastering Flutter in Khmer</span>
+                <a href="https://www.youtube.com/playlist?list=PLWrsrLN26mWZK8181Z4-PAktgU2xgWeMw" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">រៀន IT - Flutter in Khmer</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/playlist?list=PL651Eh0LyfjPY4EhRiNNuqzZc-VHNKVfm" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">CMABO SOK - Learn Flutter Khmer</span>
+                <a href="https://www.youtube.com/watch?v=Vjlt3jZb6D8" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Rorn - Flutter Crash Course</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>
                <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/playlist?list=PL-oGq_2UkkL_LVy3drrDQmMxSmY6u5aRp" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">Brahim Kh - Learning flutter</span>
+                <a href="https://www.youtube.com/playlist?list=PLIblDQYiWoDT7nT9rZnGF08aMe18ZIDuH" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">NIMTo DevStack - Mastering Flutter in Khmer</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>
@@ -351,20 +351,26 @@ function FlutterCourse() {
             <h4 className="font-medium text-red-700 mb-2">ភាសាអង់គ្លេស (English)</h4>
             <ul className="space-y-2 text-red-600">
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/watch?v=3kaGC_DrUnw" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">Flutter Mapp - Flutter Tutorial for Beginners 2025 Full Course</span>
+                <a href="https://www.youtube.com/watch?v=CzRQ9mnmh44" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Rivaan Ranawat - The Complete Dart & Flutter Developer Course</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/playlist?list=PL555aeDWfjt2usljjjuMgOBgXNOZo1Cus" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">True Coders - Flutter With Dart (Visual Studio Code)</span>
+                <a href="https://www.youtube.com/playlist?list=PLzMcBGfZo4-knQWGK2IC49Q_5AnQrFpzv" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Tech With Tim - Flutter Tutorial For Beginners</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/watch?v=yveZ8yqtG6A&list=LL&index=1" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">Shivam Gupta - Epic Quiz App with API Integration | Flutter Tutorial for Beginners 2024</span>
+                <a href="https://www.youtube.com/playlist?list=PL5jb9EteFAODi35jPznP37hnR2sTHOOTU" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Coding With T - Flutter Crash Course for absolute beginners</span>
+                  <ChevronRight className="w-4 h-4 ml-1" />
+                </a>
+              </li>
+              <li className="flex items-center space-x-2">
+                <a href="https://www.youtube.com/playlist?list=PL3nPgdhXQtHf7DvwUdnqx-FPxt4_KQjJI" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">dbestech - Flutter Riverpod State Management</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>

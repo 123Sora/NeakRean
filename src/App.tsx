@@ -22,9 +22,6 @@ import SwiftCourse from './components/courses/swift/SwiftCourse';
 import KotlinCourse from './components/courses/kotlin/KotlinCourse';
 import ConceptCourse from './components/courses/concept/ConceptCourse';
 import TerminologyCourse from './components/courses/terminology/TerminologyCourse';
-import MIScourse from './components/courses/mis/MISCourse';
-import SEcourse from './components/courses/se/SoftwareEngineeringCourse'
-
 import AboutUs from './components/AboutUs';
 import SecurityProvider from './components/SecurityProvider'; 
 
@@ -358,10 +355,10 @@ function App() {
         return <KotlinCourse />;
       case 'flutter':
         return <FlutterCourse />;
-      case 'mis':
-        return <MIScourse />;
-      case 'se':
-        return <SEcourse />;
+      // case 'mis':
+      //   return <MIScourse />;
+      // case 'se':
+      //   return <SEMCourse />;
       default:
         return <HomePage onSelectCourse={setCurrentCourse} courses={courses} />;
     }

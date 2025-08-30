@@ -4,55 +4,55 @@ import LessonViewer from '../../LessonViewer';
 import type { Lesson } from '../../../types/LessonTypes';
 
 // --- Section 1: Introduction to Swift and SwiftUI ---
-// import SwiftLesson1_1Content from '../swift/lessons/SwiftLesson1_1'; // Introduction to Swift
-// import SwiftLesson1_2Content from '../swift/lessons/SwiftLesson1_2'; // Swift Basics
-// import SwiftLesson1_3Content from '../swift/lessons/SwiftLesson1_3'; // SwiftUI Setup and Installation
+import SwiftLesson1_1Content from '../swift/lessons/SwiftLesson1_1'; // Introduction to Swift
+import SwiftLesson1_2Content from '../swift/lessons/SwiftLesson1_2'; // Swift Basics
+import SwiftLesson1_3Content from '../swift/lessons/SwiftLesson1_3'; // SwiftUI Setup and Installation
 
 // --- Section 2: SwiftUI Views and Layouts ---
-// import SwiftLesson2_1Content from '../swift/lessons/SwiftLesson2_1'; // Basic Views
-// import SwiftLesson2_2Content from '../swift/lessons/SwiftLesson2_2'; // State and Binding
-// import SwiftLesson2_3Content from '../swift/lessons/SwiftLesson2_3'; // Layouts and Stacks
-// import SwiftLesson2_4Content from '../swift/lessons/SwiftLesson2_4'; // Navigation and Lists
+import SwiftLesson2_1Content from '../swift/lessons/SwiftLesson2_1'; // Basic Views
+import SwiftLesson2_2Content from '../swift/lessons/SwiftLesson2_2'; // State and Binding
+import SwiftLesson2_3Content from '../swift/lessons/SwiftLesson2_3'; // Layouts and Stacks
+import SwiftLesson2_4Content from '../swift/lessons/SwiftLesson2_4'; // Navigation and Lists
 
 // --- Section 3: State Management in SwiftUI ---
-// import SwiftLesson3_1Content from '../swift/lessons/SwiftLesson3_1'; // @State and @Binding
-// import SwiftLesson3_2Content from '../swift/lessons/SwiftLesson3_2'; // Observable Objects
-// import SwiftLesson3_3Content from '../swift/lessons/SwiftLesson3_3'; // Environment Objects
+import SwiftLesson3_1Content from '../swift/lessons/SwiftLesson3_1'; // @State and @Binding
+import SwiftLesson3_2Content from '../swift/lessons/SwiftLesson3_2'; // Observable Objects
+import SwiftLesson3_3Content from '../swift/lessons/SwiftLesson3_3'; // Environment Objects
 
 // --- Section 4: Data and Networking ---
-// import SwiftLesson4_1Content from '../swift/lessons/SwiftLesson4_1'; // URLSession and Networking
-// import SwiftLesson4_2Content from '../swift/lessons/SwiftLesson4_2'; // JSON Parsing
-// import SwiftLesson4_3Content from '../swift/lessons/SwiftLesson4_3'; // Async/Await in Swift
+import SwiftLesson4_1Content from '../swift/lessons/SwiftLesson4_1'; // URLSession and Networking
+import SwiftLesson4_2Content from '../swift/lessons/SwiftLesson4_2'; // JSON Parsing
+import SwiftLesson4_3Content from '../swift/lessons/SwiftLesson4_3'; // Async/Await in Swift
 
 // --- Section 5: Advanced SwiftUI Topics ---
-// import SwiftLesson5_1Content from '../swift/lessons/SwiftLesson5_1'; // Animations
-// import SwiftLesson5_2Content from '../swift/lessons/SwiftLesson5_2'; // Custom Views
-// import SwiftLesson5_3Content from '../swift/lessons/SwiftLesson5_3'; // Performance Optimization
+import SwiftLesson5_1Content from '../swift/lessons/SwiftLesson5_1'; // Animations
+import SwiftLesson5_2Content from '../swift/lessons/SwiftLesson5_2'; // Custom Views
+import SwiftLesson5_3Content from '../swift/lessons/SwiftLesson5_3'; // Performance Optimization
 
 // --- Section 6: Project-Based Learning ---
-// import SwiftLesson6_1Content from '../swift/lessons/SwiftLesson6_1'; // Building a Todo App
-// import SwiftLesson6_2Content from '../swift/lessons/SwiftLesson6_2'; // Creating a Weather App
-// import SwiftLesson6_3Content from '../swift/lessons/SwiftLesson6_3'; // App Deployment to App Store
+import SwiftLesson6_1Content from '../swift/lessons/SwiftLesson6_1'; // Building a Todo App
+import SwiftLesson6_2Content from '../swift/lessons/SwiftLesson6_2'; // Creating a Weather App
+import SwiftLesson6_3Content from '../swift/lessons/SwiftLesson6_3'; // App Deployment to App Store
 
 // --- Section 7: Core Data and Storage ---
-// import SwiftLesson7_1Content from '../swift/lessons/SwiftLesson7_1'; // Core Data Basics
-// import SwiftLesson7_2Content from '../swift/lessons/SwiftLesson7_2'; // UserDefaults
-// import SwiftLesson7_3Content from '../swift/lessons/SwiftLesson7_3'; // FileManager and Storage
+import SwiftLesson7_1Content from '../swift/lessons/SwiftLesson7_1'; // Core Data Basics
+import SwiftLesson7_2Content from '../swift/lessons/SwiftLesson7_2'; // UserDefaults
+import SwiftLesson7_3Content from '../swift/lessons/SwiftLesson7_3'; // FileManager and Storage
 
 // --- Section 8: Authentication and Security ---
-// import SwiftLesson8_1Content from '../swift/lessons/SwiftLesson8_1'; // Sign in with Apple
-// import SwiftLesson8_2Content from '../swift/lessons/SwiftLesson8_2'; // Firebase Authentication
-// import SwiftLesson8_3Content from '../swift/lessons/SwiftLesson8_3'; // Secure Enclave and Keychain
+import SwiftLesson8_1Content from '../swift/lessons/SwiftLesson8_1'; // Sign in with Apple
+import SwiftLesson8_2Content from '../swift/lessons/SwiftLesson8_2'; // Firebase Authentication
+import SwiftLesson8_3Content from '../swift/lessons/SwiftLesson8_3'; // Secure Enclave and Keychain
 
 // --- Section 9: Testing and Debugging ---
-// import SwiftLesson9_1Content from '../swift/lessons/SwiftLesson9_1'; // Unit Testing
-// import SwiftLesson9_2Content from '../swift/lessons/SwiftLesson9_2'; // UI Testing
-// import SwiftLesson9_3Content from '../swift/lessons/SwiftLesson9_3'; // Debugging Techniques
+import SwiftLesson9_1Content from '../swift/lessons/SwiftLesson9_1'; // Unit Testing
+import SwiftLesson9_2Content from '../swift/lessons/SwiftLesson9_2'; // UI Testing
+import SwiftLesson9_3Content from '../swift/lessons/SwiftLesson9_3'; // Debugging Techniques
 
 // --- Section 10: Advanced Integrations ---
-// import SwiftLesson10_1Content from '../swift/lessons/SwiftLesson10_1'; // CloudKit Integration
-// import SwiftLesson10_2Content from '../swift/lessons/SwiftLesson10_2'; // Push Notifications
-// import SwiftLesson10_3Content from '../swift/lessons/SwiftLesson10_3'; // CI/CD for Swift Apps
+import SwiftLesson10_1Content from '../swift/lessons/SwiftLesson10_1'; // CloudKit Integration
+import SwiftLesson10_2Content from '../swift/lessons/SwiftLesson10_2'; // Push Notifications
+import SwiftLesson10_3Content from '../swift/lessons/SwiftLesson10_3'; // CI/CD for Swift Apps
 
 function SwiftCourse() {
   const [selectedLesson, setSelectedLesson] = useState<string | null>(null);
@@ -63,91 +63,91 @@ function SwiftCourse() {
       id: 'section-1',
       title: 'ផ្នែកទី ១: សេចក្តីផ្តើមអំពី Swift និង SwiftUI',
       lessons: [
-        // { id: 'swift-lesson-1-1', ...SwiftLesson1_1Content },
-        // { id: 'swift-lesson-1-2', ...SwiftLesson1_2Content },
-        // { id: 'swift-lesson-1-3', ...SwiftLesson1_3Content },
+        { id: 'swift-lesson-1-1', ...SwiftLesson1_1Content },
+        { id: 'swift-lesson-1-2', ...SwiftLesson1_2Content },
+        { id: 'swift-lesson-1-3', ...SwiftLesson1_3Content },
       ] as Lesson[],
     },
     {
       id: 'section-2',
       title: 'ផ្នែកទី ២: SwiftUI Views និង Layouts',
       lessons: [
-        // { id: 'swift-lesson-2-1', ...SwiftLesson2_1Content },
-        // { id: 'swift-lesson-2-2', ...SwiftLesson2_2Content },
-        // { id: 'swift-lesson-2-3', ...SwiftLesson2_3Content },
-        // { id: 'swift-lesson-2-4', ...SwiftLesson2_4Content },
+        { id: 'swift-lesson-2-1', ...SwiftLesson2_1Content },
+        { id: 'swift-lesson-2-2', ...SwiftLesson2_2Content },
+        { id: 'swift-lesson-2-3', ...SwiftLesson2_3Content },
+        { id: 'swift-lesson-2-4', ...SwiftLesson2_4Content },
       ] as Lesson[],
     },
     {
       id: 'section-3',
       title: 'ផ្នែកទី ៣: State Management ក្នុង SwiftUI',
       lessons: [
-        // { id: 'swift-lesson-3-1', ...SwiftLesson3_1Content },
-        // { id: 'swift-lesson-3-2', ...SwiftLesson3_2Content },
-        // { id: 'swift-lesson-3-3', ...SwiftLesson3_3Content },
+        { id: 'swift-lesson-3-1', ...SwiftLesson3_1Content },
+        { id: 'swift-lesson-3-2', ...SwiftLesson3_2Content },
+        { id: 'swift-lesson-3-3', ...SwiftLesson3_3Content },
       ] as Lesson[],
     },
     {
       id: 'section-4',
       title: 'ផ្នែកទី ៤: ទិន្នន័យ និង Networking',
       lessons: [
-        // { id: 'swift-lesson-4-1', ...SwiftLesson4_1Content },
-        // { id: 'swift-lesson-4-2', ...SwiftLesson4_2Content },
-        // { id: 'swift-lesson-4-3', ...SwiftLesson4_3Content },
+        { id: 'swift-lesson-4-1', ...SwiftLesson4_1Content },
+        { id: 'swift-lesson-4-2', ...SwiftLesson4_2Content },
+        { id: 'swift-lesson-4-3', ...SwiftLesson4_3Content },
       ] as Lesson[],
     },
     {
       id: 'section-5',
       title: 'ផ្នែកទី ៥: Advanced SwiftUI Topics',
       lessons: [
-        // { id: 'swift-lesson-5-1', ...SwiftLesson5_1Content },
-        // { id: 'swift-lesson-5-2', ...SwiftLesson5_2Content },
-        // { id: 'swift-lesson-5-3', ...SwiftLesson5_3Content },
+        { id: 'swift-lesson-5-1', ...SwiftLesson5_1Content },
+        { id: 'swift-lesson-5-2', ...SwiftLesson5_2Content },
+        { id: 'swift-lesson-5-3', ...SwiftLesson5_3Content },
       ] as Lesson[],
     },
     {
       id: 'section-6',
       title: 'ផ្នែកទី ៦: Project-Based Learning',
       lessons: [
-        // { id: 'swift-lesson-6-1', ...SwiftLesson6_1Content },
-        // { id: 'swift-lesson-6-2', ...SwiftLesson6_2Content },
-        // { id: 'swift-lesson-6-3', ...SwiftLesson6_3Content },
+        { id: 'swift-lesson-6-1', ...SwiftLesson6_1Content },
+        { id: 'swift-lesson-6-2', ...SwiftLesson6_2Content },
+        { id: 'swift-lesson-6-3', ...SwiftLesson6_3Content },
       ] as Lesson[],
     },
     {
       id: 'section-7',
       title: 'ផ្នែកទី ៧: Core Data និង Storage',
       lessons: [
-        // { id: 'swift-lesson-7-1', ...SwiftLesson7_1Content },
-        // { id: 'swift-lesson-7-2', ...SwiftLesson7_2Content },
-        // { id: 'swift-lesson-7-3', ...SwiftLesson7_3Content },
+        { id: 'swift-lesson-7-1', ...SwiftLesson7_1Content },
+        { id: 'swift-lesson-7-2', ...SwiftLesson7_2Content },
+        { id: 'swift-lesson-7-3', ...SwiftLesson7_3Content },
       ] as Lesson[],
     },
     {
       id: 'section-8',
       title: 'ផ្នែកទី ៨: ការផ្ទៀងផ្ទាត់ភាពត្រឹមត្រូវ និង សុវត្ថិភាព',
       lessons: [
-        // { id: 'swift-lesson-8-1', ...SwiftLesson8_1Content },
-        // { id: 'swift-lesson-8-2', ...SwiftLesson8_2Content },
-        // { id: 'swift-lesson-8-3', ...SwiftLesson8_3Content },
+        { id: 'swift-lesson-8-1', ...SwiftLesson8_1Content },
+        { id: 'swift-lesson-8-2', ...SwiftLesson8_2Content },
+        { id: 'swift-lesson-8-3', ...SwiftLesson8_3Content },
       ] as Lesson[],
     },
     {
       id: 'section-9',
-      title: 'ផ្នែកទី ៩: ការសាកល្បង និង ការបំបាត់កំហុស',
+      title: 'ផ្នែកទី ៩: Testing និង Debugging',
       lessons: [
-        // { id: 'swift-lesson-9-1', ...SwiftLesson9_1Content },
-        // { id: 'swift-lesson-9-2', ...SwiftLesson9_2Content },
-        // { id: 'swift-lesson-9-3', ...SwiftLesson9_3Content },
+        { id: 'swift-lesson-9-1', ...SwiftLesson9_1Content },
+        { id: 'swift-lesson-9-2', ...SwiftLesson9_2Content },
+        { id: 'swift-lesson-9-3', ...SwiftLesson9_3Content },
       ] as Lesson[],
     },
     {
       id: 'section-10',
       title: 'ផ្នែកទី ១០: ការរួមបញ្ចូលកម្រិតខ្ពស់',
       lessons: [
-        // { id: 'swift-lesson-10-1', ...SwiftLesson10_1Content },
-        // { id: 'swift-lesson-10-2', ...SwiftLesson10_2Content },
-        // { id: 'swift-lesson-10-3', ...SwiftLesson10_3Content },
+        { id: 'swift-lesson-10-1', ...SwiftLesson10_1Content },
+        { id: 'swift-lesson-10-2', ...SwiftLesson10_2Content },
+        { id: 'swift-lesson-10-3', ...SwiftLesson10_3Content },
       ] as Lesson[],
     },
   ];
@@ -191,7 +191,7 @@ function SwiftCourse() {
           </div>
         </div>
         <p className="text-lg opacity-90">
-          រៀនសូត្រ Swift និង SwiftUI ដើម្បីបង្កើតកម្មវិធី iOS ដែលមានគុណភាពខ្ពស់។ 
+          រៀន Swift និង SwiftUI ដើម្បីបង្កើតកម្មវិធី iOS ដែលមានគុណភាពខ្ពស់។ 
           ប្រើប្រាស់ Swift Language និង SwiftUI សម្រាប់ User Interface។
         </p>
         
@@ -308,8 +308,14 @@ function SwiftCourse() {
             <h4 className="font-medium text-red-700 mb-2">ភាសាខ្មែរ (Khmer) 🇰🇭</h4>
             <ul className="space-y-2 text-red-600">
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/playlist?list=PLuEdNLfGOtnV5C07xX0c3q2mC0Z9z3V6N" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">Khode Academy - Swift Course</span>
+                <a href="https://www.youtube.com/playlist?list=PLWrsrLN26mWbuE6mOEidxs0LykyGqu53a" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">រៀន IT - Swift Programming for Beginners | Khmer</span>
+                  <ChevronRight className="w-4 h-4 ml-1" />
+                </a>
+              </li>
+              <li className="flex items-center space-x-2">
+                <a href="https://www.youtube.com/playlist?list=PLkjLm7EvgZyY9HZ47TZ8UQ99Ad5onLVZ0" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">WaysToMobileApps - Swift Programming </span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>
@@ -319,20 +325,26 @@ function SwiftCourse() {
             <h4 className="font-medium text-red-700 mb-2">ភាសាអង់គ្លេស (English)</h4>
             <ul className="space-y-2 text-red-600">
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/playlist?list=PLwvDm4Vfk9Y8u0ov1v4VSxC9UNvji6v0M" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">Sean Allen - SwiftUI Tutorials</span>
+                <a href="https://www.youtube.com/watch?v=comQ1-x2a1Q" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">freeCodeCamp.org - Swift Tutorial Full Course for Beginners</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>
               <li className="flex items-center space-x-2">
                 <a href="https://www.youtube.com/playlist?list=PL5PR3UyfTWvfgx9W8WJ9orQf6N1tx0oxN" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">CodeWithChris - SwiftUI Basics</span>
+                  <span className="text-sm">iOS Academy - SwiftUI 2023: Tutorials & Walkthroughs</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/watch?v=zm5mG4s\_7WY" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">freeCodeCamp - SwiftUI Course</span>
+                <a href="https://www.youtube.com/playlist?list=PLwvDm4VfkdpiLvzZFJI6rVIBtdolrJBVB" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm"> Swiftful Thinking - Swift Basics (Beginner Level)</span>
+                  <ChevronRight className="w-4 h-4 ml-1" />
+                </a>
+              </li>
+               <li className="flex items-center space-x-2">
+                <a href="https://www.youtube.com/playlist?list=PLWZIhpNhtvfqBd00bF3ouroGHMPe-iroO" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm"> Yogesh Patel - Swift Basics (Beginner Level)</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>

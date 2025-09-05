@@ -6,38 +6,38 @@ import type { Lesson } from '../../../types/LessonTypes';
 // --- ផ្នែកទី ១: សេចក្តីផ្តើមអំពី React Native និង JavaScript ---
 import ReactNativeLesson1_1Content from '../reactnative/lessons/ReactNativeLesson1_1'; // ណែនាំអំពី React Native
 import ReactNativeLesson1_2Content from '../reactnative/lessons/ReactNativeLesson1_2'; // JavaScript Basics for React Native
-// import ReactNativeLesson1_3Content from '../reactnative/lessons/ReactNativeLesson1_3'; // React Native Setup and Installation
+import ReactNativeLesson1_3Content from '../reactnative/lessons/ReactNativeLesson1_3'; // React Native Setup and Installation
 
 // --- ផ្នែកទី ២: React Native Components និង UI Basics ---
-// import ReactNativeLesson2_1Content from '../reactnative/lessons/ReactNativeLesson2_1'; // Core Components
-// import ReactNativeLesson2_2Content from '../reactnative/lessons/ReactNativeLesson2_2'; // Functional Components and Hooks
-// import ReactNativeLesson2_3Content from '../reactnative/lessons/ReactNativeLesson2_3'; // Styling and Flexbox
-// import ReactNativeLesson2_4Content from '../reactnative/lessons/ReactNativeLesson2_4'; // Custom Components
+import ReactNativeLesson2_1Content from '../reactnative/lessons/ReactNativeLesson2_1'; // Core Components
+import ReactNativeLesson2_2Content from '../reactnative/lessons/ReactNativeLesson2_2'; // Functional Components and Hooks
+import ReactNativeLesson2_3Content from '../reactnative/lessons/ReactNativeLesson2_3'; // Styling and Flexbox
+import ReactNativeLesson2_4Content from '../reactnative/lessons/ReactNativeLesson2_4'; // Custom Components
 
 // --- ផ្នែកទី ៣: Navigation and Routing ---
-// import ReactNativeLesson3_1Content from '../reactnative/lessons/ReactNativeLesson3_1'; // Basic Navigation with React Navigation
-// import ReactNativeLesson3_2Content from '../reactnative/lessons/ReactNativeLesson3_2'; // Stack and Tab Navigation
-// import ReactNativeLesson3_3Content from '../reactnative/lessons/ReactNativeLesson3_3'; // Advanced Navigation Techniques
+import ReactNativeLesson3_1Content from '../reactnative/lessons/ReactNativeLesson3_1'; // Basic Navigation with React Navigation
+import ReactNativeLesson3_2Content from '../reactnative/lessons/ReactNativeLesson3_2'; // Stack and Tab Navigation
+import ReactNativeLesson3_3Content from '../reactnative/lessons/ReactNativeLesson3_3'; // Advanced Navigation Techniques
 
 // --- ផ្នែកទី ៤: State Management ---
-// import ReactNativeLesson4_1Content from '../reactnative/lessons/ReactNativeLesson4_1'; // State Management Basics
-// import ReactNativeLesson4_2Content from '../reactnative/lessons/ReactNativeLesson4_2'; // Redux and Context API
-// import ReactNativeLesson4_3Content from '../reactnative/lessons/ReactNativeLesson4_3'; // Advanced State with Redux Toolkit
+import ReactNativeLesson4_1Content from '../reactnative/lessons/ReactNativeLesson4_1'; // State Management Basics
+import ReactNativeLesson4_2Content from '../reactnative/lessons/ReactNativeLesson4_2'; // Redux and Context API
+import ReactNativeLesson4_3Content from '../reactnative/lessons/ReactNativeLesson4_3'; // Advanced State with Redux Toolkit
 
 // --- ផ្នែកទី ៥: Working with APIs ---
-// import ReactNativeLesson5_1Content from '../reactnative/lessons/ReactNativeLesson5_1'; // HTTP Requests with Fetch
-// import ReactNativeLesson5_2Content from '../reactnative/lessons/ReactNativeLesson5_2'; // JSON Parsing and API Integration
-// import ReactNativeLesson5_3Content from '../reactnative/lessons/ReactNativeLesson5_3'; // AsyncStorage for Local Data
+import ReactNativeLesson5_1Content from '../reactnative/lessons/ReactNativeLesson5_1'; // HTTP Requests with Fetch
+import ReactNativeLesson5_2Content from '../reactnative/lessons/ReactNativeLesson5_2'; // JSON Parsing and API Integration
+import ReactNativeLesson5_3Content from '../reactnative/lessons/ReactNativeLesson5_3'; // AsyncStorage for Local Data
 
 // --- ផ្នែកទី ៦: Native Modules and Features ---
-// import ReactNativeLesson6_1Content from '../reactnative/lessons/ReactNativeLesson6_1'; // Accessing Native Modules
-// import ReactNativeLesson6_2Content from '../reactnative/lessons/ReactNativeLesson6_2'; // Push Notifications
-// import ReactNativeLesson6_3Content from '../reactnative/lessons/ReactNativeLesson6_3'; // Camera and Location Services
+import ReactNativeLesson6_1Content from '../reactnative/lessons/ReactNativeLesson6_1'; // Accessing Native Modules
+import ReactNativeLesson6_2Content from '../reactnative/lessons/ReactNativeLesson6_2'; // Push Notifications
+import ReactNativeLesson6_3Content from '../reactnative/lessons/ReactNativeLesson6_3'; // Camera and Location Services
 
 // --- ផ្នែកទី ៧: Project-Based Learning and Deployment ---
-// import ReactNativeLesson7_1Content from '../reactnative/lessons/ReactNativeLesson7_1'; // Building a Todo App
-// import ReactNativeLesson7_2Content from '../reactnative/lessons/ReactNativeLesson7_2'; // Creating a Shopping App
-// import ReactNativeLesson7_3Content from '../reactnative/lessons/ReactNativeLesson7_3'; // App Store and Play Store Publishing
+import ReactNativeLesson7_1Content from '../reactnative/lessons/ReactNativeLesson7_1'; // Building a Todo App
+import ReactNativeLesson7_2Content from '../reactnative/lessons/ReactNativeLesson7_2'; // Creating a Shopping App
+import ReactNativeLesson7_3Content from '../reactnative/lessons/ReactNativeLesson7_3'; // App Store and Play Store Publishing
 
 function ReactNativeCourse() {
   const [selectedLesson, setSelectedLesson] = useState<string | null>(null);
@@ -50,62 +50,62 @@ function ReactNativeCourse() {
       lessons: [
         { id: 'react-native-lesson-1-1', ...ReactNativeLesson1_1Content },
         { id: 'react-native-lesson-1-2', ...ReactNativeLesson1_2Content },
-        // { id: 'react-native-lesson-1-3', ...ReactNativeLesson1_3Content },
+        { id: 'react-native-lesson-1-3', ...ReactNativeLesson1_3Content },
       ] as Lesson[],
     },
     {
       id: 'section-2',
       title: 'ផ្នែកទី ២: React Native Components និង UI Basics',
       lessons: [
-        // { id: 'react-native-lesson-2-1', ...ReactNativeLesson2_1Content },
-        // { id: 'react-native-lesson-2-2', ...ReactNativeLesson2_2Content },
-        // { id: 'react-native-lesson-2-3', ...ReactNativeLesson2_3Content },
-        // { id: 'react-native-lesson-2-4', ...ReactNativeLesson2_4Content },
+        { id: 'react-native-lesson-2-1', ...ReactNativeLesson2_1Content },
+        { id: 'react-native-lesson-2-2', ...ReactNativeLesson2_2Content },
+        { id: 'react-native-lesson-2-3', ...ReactNativeLesson2_3Content },
+        { id: 'react-native-lesson-2-4', ...ReactNativeLesson2_4Content },
       ] as Lesson[],
     },
     {
       id: 'section-3',
       title: 'ផ្នែកទី ៣: Navigation and Routing',
       lessons: [
-        // { id: 'react-native-lesson-3-1', ...ReactNativeLesson3_1Content },
-        // { id: 'react-native-lesson-3-2', ...ReactNativeLesson3_2Content },
-        // { id: 'react-native-lesson-3-3', ...ReactNativeLesson3_3Content },
+        { id: 'react-native-lesson-3-1', ...ReactNativeLesson3_1Content },
+        { id: 'react-native-lesson-3-2', ...ReactNativeLesson3_2Content },
+        { id: 'react-native-lesson-3-3', ...ReactNativeLesson3_3Content },
       ] as Lesson[],
     },
     {
       id: 'section-4',
       title: 'ផ្នែកទី ៤: State Management',
       lessons: [
-        // { id: 'react-native-lesson-4-1', ...ReactNativeLesson4_1Content },
-        // { id: 'react-native-lesson-4-2', ...ReactNativeLesson4_2Content },
-        // { id: 'react-native-lesson-4-3', ...ReactNativeLesson4_3Content },
+        { id: 'react-native-lesson-4-1', ...ReactNativeLesson4_1Content },
+        { id: 'react-native-lesson-4-2', ...ReactNativeLesson4_2Content },
+        { id: 'react-native-lesson-4-3', ...ReactNativeLesson4_3Content },
       ] as Lesson[],
     },
     {
       id: 'section-5',
       title: 'ផ្នែកទី ៥: Working with APIs',
       lessons: [
-        // { id: 'react-native-lesson-5-1', ...ReactNativeLesson5_1Content },
-        // { id: 'react-native-lesson-5-2', ...ReactNativeLesson5_2Content },
-        // { id: 'react-native-lesson-5-3', ...ReactNativeLesson5_3Content },
+        { id: 'react-native-lesson-5-1', ...ReactNativeLesson5_1Content },
+        { id: 'react-native-lesson-5-2', ...ReactNativeLesson5_2Content },
+        { id: 'react-native-lesson-5-3', ...ReactNativeLesson5_3Content },
       ] as Lesson[],
     },
     {
       id: 'section-6',
       title: 'ផ្នែកទី ៦: Native Modules and Features',
       lessons: [
-        // { id: 'react-native-lesson-6-1', ...ReactNativeLesson6_1Content },
-        // { id: 'react-native-lesson-6-2', ...ReactNativeLesson6_2Content },
-        // { id: 'react-native-lesson-6-3', ...ReactNativeLesson6_3Content },
+        { id: 'react-native-lesson-6-1', ...ReactNativeLesson6_1Content },
+        { id: 'react-native-lesson-6-2', ...ReactNativeLesson6_2Content },
+        { id: 'react-native-lesson-6-3', ...ReactNativeLesson6_3Content },
       ] as Lesson[],
     },
     {
       id: 'section-7',
       title: 'ផ្នែកទី ៧: Project-Based Learning and Deployment',
       lessons: [
-        // { id: 'react-native-lesson-7-1', ...ReactNativeLesson7_1Content },
-        // { id: 'react-native-lesson-7-2', ...ReactNativeLesson7_2Content },
-        // { id: 'react-native-lesson-7-3', ...ReactNativeLesson7_3Content },
+        { id: 'react-native-lesson-7-1', ...ReactNativeLesson7_1Content },
+        { id: 'react-native-lesson-7-2', ...ReactNativeLesson7_2Content },
+        { id: 'react-native-lesson-7-3', ...ReactNativeLesson7_3Content },
       ] as Lesson[],
     },
   ];
@@ -149,7 +149,7 @@ function ReactNativeCourse() {
           </div>
         </div>
         <p className="text-lg opacity-90">
-          រៀនសូត្រ React Native ដើម្បីបង្កើតកម្មវិធីទូរស័ព្ទដោយប្រើ JavaScript។ 
+          រៀន React Native ដើម្បីបង្កើតកម្មវិធីទូរស័ព្ទដោយប្រើ JavaScript។ 
           ប្រើប្រាស់ React Components, Navigation និង Native Modules។
         </p>
         

@@ -100,22 +100,22 @@ WHERE e.salary > 2000;
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ INNER JOIN</h3>
-<p>ភ្ជាប់ Table <code>orders</code> និង <code>customers</code>។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ INNER JOIN
+ភ្ជាប់ Table \`orders\` និង \`customers\`។
+\`\`\`sql
 SELECT c.name, o.total 
 FROM customers c 
 INNER JOIN orders o ON c.customer_id = o.customer_id;
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍�： LEFT JOIN</h3>
-<p>ទាញអតិថិជនទាំងអស់ និង Orders ដែលត្រូវគ្នា។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍： LEFT JOIN
+ទាញអតិថិជនទាំងអស់ និង Orders ដែលត្រូវគ្នា។
+\`\`\`sql
 SELECT c.name, o.total 
 FROM customers c 
 LEFT JOIN orders o ON c.customer_id = o.customer_id;
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -302,20 +302,20 @@ LEFT JOIN orders o ON c.customer_id = o.customer_id;
 
 **តម្រូវការ:**
 
-1. **បង្កើត Tables:**
+**1. បង្កើត Tables:**
    - បង្កើត Table \`customers\` ដែលមាន Columns: \`customer_id\` (INT, PRIMARY KEY), \`name\` (VARCHAR)។
    - បង្កើត Table \`orders\` ដែលមាន Columns: \`order_id\` (INT, PRIMARY KEY), \`customer_id\` (INT), \`total\` (DECIMAL)។
 
-2. **បញ្ចូលទិន្នន័យ:**
+**2. បញ្ចូលទិន្នន័យ:**
    - បញ្ចូល ៣ Records ទៅក្នុង \`customers\`។
    - បញ្ចូល ៤ Records ទៅក្នុង \`orders\`។
 
-3. **ទាញទិន្នន័យ:**
+**3. ទាញទិន្នន័យ:**
    - ប្រើ \`INNER JOIN\` ដើម្បីទាញ \`name\` និង \`total\`។
    - ប្រើ \`LEFT JOIN\` ដើម្បីទាញ \`name\` និង \`total\` សម្រាប់អតិថិជនទាំងអស់។
    - ប្រើ \`RIGHT JOIN\` ដើម្បីទាញ \`name\` និង \`total\`។
 
-4. **Test:**
+**4. Test:**
    - ប្រើ MySQL Workbench ឬ phpMyAdmin ដើម្បី Run Queries និងពិនិត្យលទ្ធផល។
 
 **ការណែនាំ:** ប្រើ \`SELECT * FROM customers\` និង \`SELECT * FROM orders\` ដើម្បីពិនិត្យទិន្នន័យ។

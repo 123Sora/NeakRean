@@ -12,6 +12,7 @@ import NextJSCourse from './components/courses/nextjs/NextJSCourse';
 import PostmanCourse from './components/courses/postman/PostmanCourse';
 import GitHubCourse from './components/courses/github/GitHubCourse';
 import GitLabCourse from './components/courses/gitlab/GitLabCourse';
+import JiraCourse from './components/courses/jira/JiraCourse';
 import MySQLCourse from './components/courses/mysql/MYSQLCourse';
 import NodeJSCourse from './components/courses/nodejs/NodeJSCourse';
 import ExpressJSCourse from './components/courses/expressjs/ExpressJSCourse';
@@ -28,7 +29,7 @@ import TerminologyCourse from './components/courses/terminology/TerminologyCours
 import AboutUs from './components/AboutUs';
 import SecurityProvider from './components/SecurityProvider'; 
 
-type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'mysql' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology' | 'mis' | 'se' ;
+type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'jira'|   'mysql' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology' | 'mis' | 'se' ;
 
 // Define the Course interface to match HomePage expectations
 interface Course {
@@ -307,7 +308,17 @@ function App() {
     lessons: 18,
     duration: '6-8 ម៉ោង',
     level: 'មធ្យម',
-  }
+  }, 
+  {
+  id: 'jira',
+  name: 'Jira',
+  khmer: 'Jira Software',
+  icon: 'https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg',
+  color: 'bg-blue-300',
+  lessons: 16,
+  duration: '5-8 ម៉ោង',
+  level: 'មធ្យម',
+}
   ];
 
   const renderCurrentCourse = () => {
@@ -342,6 +353,8 @@ function App() {
         return <GitHubCourse />;
       case 'gitlab':
         return <GitLabCourse />;
+      case 'jira':
+        return <JiraCourse />;
       case 'mysql':
         return <MySQLCourse />;
       case 'nodejs':

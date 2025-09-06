@@ -93,23 +93,23 @@ HAVING AVG(salary) > 2000;
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ ប្រើ GROUP BY និង COUNT</h3>
-<p>រាប់ចំនួនផលិតផលតាមប្រភេទនៅក្នុង Table <code>products</code>។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ ប្រើ GROUP BY និង COUNT
+រាប់ចំនួនផលិតផលតាមប្រភេទនៅក្នុង Table \`products\`។
+\`\`\`sql
 SELECT category, COUNT(*) AS product_count 
 FROM products 
 GROUP BY category;
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ ប្រើ HAVING</h3>
-<p>ទាញប្រភេទផលិតផលដែលមានតម្លៃមធ្យមលើសពី 100។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ ប្រើ HAVING
+ទាញប្រភេទផលិតផលដែលមានតម្លៃមធ្យមលើសពី 100។
+\`\`\`sql
 SELECT category, AVG(price) AS avg_price 
 FROM products 
 GROUP BY category 
 HAVING AVG(price) > 100;
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -296,19 +296,19 @@ HAVING AVG(price) > 100;
 
 **តម្រូវការ:**
 
-1. **បង្កើត Table:**
+**1. បង្កើត Table:**
    - បង្កើត Table \`sales\` ដែលមាន Columns: \`sale_id\` (INT, PRIMARY KEY), \`product_id\` (INT), \`amount\` (DECIMAL), \`sale_date\` (DATE)។
 
-2. **បញ្ចូលទិន្នន័យ:**
+**2. បញ្ចូលទិន្នន័យ:**
    - បញ្ចូល ៥ Records ទៅក្នុង \`sales\`។
 
-3. **វិភាគទិន្នន័យ:**
+**3. វិភាគទិន្នន័យ:**
    - រាប់ចំនួន Sales ទាំងអស់។
    - គណនាសរុប និងមធ្យមនៃ \`amount\`។
    - ទាញ \`product_id\` និងចំនួន Sales តាម \`product_id\` ដោយប្រើ \`GROUP BY\`។
    - ទាញ \`product_id\` ដែលមាន \`amount\` សរុបលើសពី 100 ដោយប្រើ \`HAVING\`។
 
-4. **Test:**
+**4. Test:**
    - ប្រើ MySQL Workbench ឬ phpMyAdmin ដើម្បី Run Queries និងពិនិត្យលទ្ធផល។
 
 **ការណែនាំ:** ប្រើ \`SELECT * FROM sales\` ដើម្បីពិនិត្យទិន្នន័យ។

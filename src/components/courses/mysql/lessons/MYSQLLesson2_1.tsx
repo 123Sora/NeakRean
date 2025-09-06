@@ -91,22 +91,22 @@ COMMIT;
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ ប្រើ DDL ដើម្បីបង្កើត Table</h3>
-<p>បង្កើត Table <code>students</code> ដើម្បីផ្ទុកព័ត៌មាននិស្សិត។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ ប្រើ DDL ដើម្បីបង្កើត Table
+បង្កើត Table \`students\` ដើម្បីផ្ទុកព័ត៌មាននិស្សិត។
+\`\`\`sql
 CREATE TABLE students (
   student_id INT PRIMARY KEY,
   name VARCHAR(50),
   age INT
 );
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ ប្រើ DML ដើម្បីបញ្ចូលទិន្នន័យ</h3>
-<p>បញ្ចូលទិន្នន័យនិស្សិតទៅក្នុង Table <code>students</code>។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ ប្រើ DML ដើម្បីបញ្ចូលទិន្នន័យ
+បញ្ចូលទិន្នន័យនិស្សិតទៅក្នុង Table \`students\`។
+\`\`\`sql
 INSERT INTO students (student_id, name, age) VALUES (1, 'សុខ', 20);
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -282,19 +282,19 @@ INSERT INTO students (student_id, name, age) VALUES (1, 'សុខ', 20);
 
 **តម្រូវការ:**
 
-1. **បង្កើត Database:**
+**1. បង្កើត Database:**
    - បង្កើត Database ឈ្មោះ \`test_sql\`។
 
-2. **បង្កើត Table:**
+**2. បង្កើត Table:**
    - បង្កើត Table \`products\` ដែលមាន Columns: \`id\` (INT, PRIMARY KEY), \`name\` (VARCHAR), \`price\` (DECIMAL)។
 
-3. **បញ្ចូលទិន្នន័យ:**
+**3. បញ្ចូលទិន្នន័យ:**
    - បញ្ចូល Record មួយទៅក្នុង \`products\`។
 
-4. **ផ្តល់សិទ្ធិ:**
+**4. ផ្តល់សិទ្ធិ:**
    - ផ្តល់សិទ្ធិ \`SELECT\` ទៅ User ឈ្មោះ \`test_user\`។
 
-5. **Test:**
+**5. Test:**
    - ប្រើ MySQL Command-Line Client ឬ phpMyAdmin ដើម្បី Run Commands។
 
 **ការណែនាំ:** ពិនិត្យ Syntax នៅក្នុង MySQL Documentation។

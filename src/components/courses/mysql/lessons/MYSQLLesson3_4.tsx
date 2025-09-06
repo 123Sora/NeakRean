@@ -90,18 +90,18 @@ WHERE emp_id = 1;
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ បង្កើត View</h3>
-<p>បង្កើត View ដើម្បីទាញព័ត៌មានផលិតផល។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ បង្កើត View
+បង្កើត View ដើម្បីទាញព័ត៌មានផលិតផល។
+\`\`\`sql
 CREATE VIEW product_summary AS
 SELECT name, price, category 
 FROM products;
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ Updatable View</h3>
-<p>បង្កើត View ដែលអនុញ្ញាតឱ្យកែប្រែតម្លៃផលិតផល។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ Updatable View
+បង្កើត View ដែលអនុញ្ញាតឱ្យកែប្រែតម្លៃផលិតផល។
+\`\`\`sql
 CREATE VIEW product_price AS
 SELECT product_id, name, price 
 FROM products;
@@ -109,7 +109,7 @@ FROM products;
 UPDATE product_price 
 SET price = 39.99 
 WHERE product_id = 1;
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -296,23 +296,23 @@ WHERE product_id = 1;
 
 **តម្រូវការ:**
 
-1. **បង្កើត Tables:**
+**1. បង្កើត Tables:**
    - បង្កើត Table \`products\` ដែលមាន Columns: \`product_id\` (INT, PRIMARY KEY), \`name\` (VARCHAR), \`price\` (DECIMAL), \`category\` (VARCHAR)។
    - បញ្ចូល ៥ Records ទៅក្នុង \`products\`។
 
-2. **បង្កើត Views:**
+**2. បង្កើត Views:**
    - បង្កើត View \`product_summary\` ដែលបង្ហាញ \`name\`, \`price\`, \`category\`។
    - បង្កើត Updatable View \`product_price\` ដែលបង្ហាញ \`product_id\`, \`name\`, \`price\`។
 
-3. **ទាញទិន្នន័យ:**
+**3. ទាញទិន្នន័យ:**
    - Query \`product_summary\` ដើម្បីទាញផលិតផលដែល \`price\` លើសពី 50។
    - Update \`price\` នៅក្នុង \`product_price\` សម្រាប់ \`product_id = 1\`។
 
-4. **កែប្រែ View:**
+**4. កែប្រែ View:**
    - កែប្រែ \`product_summary\` ដើម្បីបន្ថែម Column \`product_id\`។
    - លុប \`product_summary\`។
 
-5. **Test:**
+**5. Test:**
    - ប្រើ MySQL Workbench ឬ phpMyAdmin ដើម្បី Run Queries និងពិនិត្យលទ្ធផល។
 
 **ការណែនាំ:** ប្រើ \`SELECT * FROM products\` ដើម្បីពិនិត្យទិន្នន័យ។

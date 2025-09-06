@@ -116,9 +116,9 @@ SELECT name, salary, GetEmployeeBonus(salary) AS bonus FROM employees;
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ Stored Procedure</h3>
-<p>បង្កើត Procedure ដើម្បីទាញផលិតផលតាម Category។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ Stored Procedure
+បង្កើត Procedure ដើម្បីទាញផលិតផលតាម Category។
+\`\`\`sql
 DELIMITER //
 CREATE PROCEDURE GetProductsByCategory(IN cat VARCHAR(50))
 BEGIN
@@ -126,12 +126,11 @@ BEGIN
 END //
 DELIMITER ;
 CALL GetProductsByCategory('Electronics');
-</code></pre>
+\`\`\`
 `,
-    `
-<h3>ឧទាហរណ៍៖ Function</h3>
-<p>បង្កើត Function ដើម្បីគណនា Discount។</p>
-<pre><code class="language-sql">
+    `### ឧទាហរណ៍៖ Function
+បង្កើត Function ដើម្បីគណនា Discount។
+\`\`\`sql
 DELIMITER //
 CREATE FUNCTION GetDiscount(price DECIMAL(10,2)) RETURNS DECIMAL(10,2)
 DETERMINISTIC
@@ -140,7 +139,7 @@ BEGIN
 END //
 DELIMITER ;
 SELECT name, price, GetDiscount(price) AS discount FROM products;
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -327,17 +326,17 @@ SELECT name, price, GetDiscount(price) AS discount FROM products;
 
 **តម្រូវការ:**
 
-1. **បង្កើត Table:**
+**1. បង្កើត Table:**
    - បង្កើត Table \`employees\` ដែលមាន Columns: \`emp_id\` (INT, PRIMARY KEY), \`name\` (VARCHAR), \`salary\` (DECIMAL), \`dept_id\` (INT)។
    - បញ្ចូល ៤ Records ទៅក្នុង \`employees\`។
 
-2. **បង្កើត Stored Procedure:**
+**2. បង្កើត Stored Procedure:**
    - បង្កើត Procedure \`GetHighSalaryEmployees\` ដែលទាញ \`name\` និង \`salary\` សម្រាប់បុគ្គលិកដែល \`salary\` លើសពី Parameter ដែលបញ្ចូល។
 
-3. **បង្កើត Function:**
+**3. បង្កើត Function:**
    - បង្កើត Function \`CalculateBonus\` ដែលគណនា Bonus (10% នៃ \`salary\`)។
 
-4. **Test:**
+**4. Test:**
    - Call \`GetHighSalaryEmployees\` ជាមួយ \`salary\` 2000។
    - Query \`name\`, \`salary\`, និង \`CalculateBonus(salary)\` សម្រាប់បុគ្គលិកទាំងអស់។
    - ប្រើ MySQL Workbench ឬ phpMyAdmin ដើម្បី Run Queries។

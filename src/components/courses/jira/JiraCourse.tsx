@@ -238,12 +238,13 @@ function JiraCourse() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <h4 className="font-medium text-red-700 mb-2">ភាសាខ្មែរ (Khmer) 🇰🇭</h4>
-            <ul className="space-y-2 text-red-600">
+            <ul className="space-y-2 text-gray-600">
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/results?search_query=jira+tutorial+khmer" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">ស្វែងរក Jira Tutorials ជាភាសាខ្មែរ</span>
+{/*                 <a href="#" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">គ្មាន​ Jira Tutorials ជាភាសាខ្មែរ</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
-                </a>
+                </a> */}
+                <span className="text-sm">គ្មាន​ Jira Tutorials ជាភាសាខ្មែរ</span>
               </li>
             </ul>
           </div>
@@ -251,14 +252,20 @@ function JiraCourse() {
             <h4 className="font-medium text-red-700 mb-2">ភាសាអង់គ្លេស (English)</h4>
             <ul className="space-y-2 text-red-600">
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/watch?v=kYv7tX6n2_0" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">Simplilearn - Jira Full Course</span>
+                <a href="https://www.youtube.com/watch?v=Beozx9pUajA" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Code Step By Step - Jira Complete Tutorial | jira tool full course</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/watch?v=3M5bXp1S5uU" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">Project Management with Jira</span>
+                <a href="https://www.youtube.com/watch?v=nHuhojfjeUY" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Simon Sez IT - Jira Tutorial for Beginners: Jira Project Management</span>
+                  <ChevronRight className="w-4 h-4 ml-1" />
+                </a>
+              </li>
+              <li className="flex items-center space-x-2">
+                <a href="https://www.youtube.com/watch?v=NDVSMlVYxm8" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Alvin the PM - Jira for Beginners (FREE COURSE!)</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>

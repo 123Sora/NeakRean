@@ -75,20 +75,20 @@ TRUNCATE TABLE employees;
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ បញ្ចូលទិន្នន័យ</h3>
-<p>បញ្ចូល Record ទៅក្នុង Table <code>products</code>។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ បញ្ចូលទិន្នន័យ
+បញ្ចូល Record ទៅក្នុង Table \`products\`។
+\`\`\`sql
 INSERT INTO products (product_id, name, price) 
 VALUES (1, 'កាបូប', 29.99);
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ កែប្រែ និងលុបទិន្នន័យ</h3>
-<p>កែប្រែ និងលុប Record នៅក្នុង Table <code>products</code>។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ កែប្រែ និងលុបទិន្នន័យ
+កែប្រែ និងលុប Record នៅក្នុង Table \`products\`។
+\`\`\`sql
 UPDATE products SET price = 39.99 WHERE product_id = 1;
 DELETE FROM products WHERE product_id = 1;
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -264,19 +264,19 @@ DELETE FROM products WHERE product_id = 1;
 
 **តម្រូវការ:**
 
-1. **បង្កើត Table:**
+**1. បង្កើត Table:**
    - បង្កើត Table \`orders\` ដែលមាន Columns: \`order_id\` (INT, PRIMARY KEY), \`customer_id\` (INT), \`total\` (DECIMAL), \`order_date\` (DATE)។
 
-2. **បញ្ចូលទិន្នន័យ:**
+**2. បញ្ចូលទិន្នន័យ:**
    - បញ្ចូល ៣ Records ទៅក្នុង \`orders\`។
 
-3. **កែប្រែទិន្នន័យ:**
+**3. កែប្រែទិន្នន័យ:**
    - កែប្រែ \`total\` នៃ Record ដែល \`order_id = 1\` ទៅជា 99.99។
 
-4. **លុបទិន្នន័យ:**
+**4. លុបទិន្នន័យ:**
    - លុប Record ដែល \`order_id = 3\`។
 
-5. **Test:**
+**5. Test:**
    - ប្រើ MySQL Workbench ឬ phpMyAdmin ដើម្បី Run Commands និងពិនិត្យទិន្នន័យ។
 
 **ការណែនាំ:** ប្រើ \`SELECT * FROM orders\` ដើម្បីពិនិត្យទិន្នន័យ។

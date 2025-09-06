@@ -86,19 +86,19 @@ CREATE TABLE employees (
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ បង្កើត ER Diagram</h3>
-<p>បង្កើត ER Diagram សម្រាប់ប្រព័ន្ធគ្រប់គ្រងហាង។</p>
-<pre><code class="language-text">
+### ឧទាហរណ៍៖ បង្កើត ER Diagram
+បង្កើត ER Diagram សម្រាប់ប្រព័ន្ធគ្រប់គ្រងហាង។
+\`\`\`sql
 [Customer] --- (Places) --- [Order] --- (Contains) --- [Product]
   | cust_id             | order_id          | product_id
   | name                | order_date        | name
   | email               | total             | price
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ បង្កើត Tables ជាមួយ Foreign Key</h3>
-<p>បង្កើត Tables សម្រាប់ Customers និង Orders។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ បង្កើត Tables ជាមួយ Foreign Key
+បង្កើត Tables សម្រាប់ Customers និង Orders។
+\`\`\`sql
 CREATE TABLE customers (
   cust_id INT PRIMARY KEY,
   name VARCHAR(50),
@@ -111,7 +111,7 @@ CREATE TABLE orders (
   order_date DATE,
   FOREIGN KEY (cust_id) REFERENCES customers(cust_id)
 );
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -287,19 +287,19 @@ CREATE TABLE orders (
 
 **តម្រូវការ:**
 
-1. **បង្កើត ER Diagram:**
+**1. បង្កើត ER Diagram:**
    - បង្កើត ER Diagram ដែលមាន Entities: \`Students\`, \`Courses\`, និង \`Enrollments\`។
    - \`Students\` មាន Attributes: \`student_id\`, \`name\`, \`email\`។
    - \`Courses\` មាន Attributes: \`course_id\`, \`course_name\`។
    - \`Enrollments\` មាន Attributes: \`enrollment_id\`, \`student_id\`, \`course_id\`, \`enroll_date\`។
    - បង្ហាញ Relationship ថា Student ចុះឈ្មោះនៅក្នុង Course។
 
-2. **បង្កើត Tables:**
+**2. បង្កើត Tables:**
    - បង្កើត Tables សម្រាប់ \`Students\`, \`Courses\`, និង \`Enrollments\` ដោយប្រើ Primary Key និង Foreign Key។
    - បញ្ចូល ៣ Records ទៅក្នុង \`Students\` និង \`Courses\`។
    - បញ្ចូល ២ Records ទៅក្នុង \`Enrollments\`។
 
-3. **Test:**
+**3. Test:**
    - Query \`Enrollments\` ដើម្បីទាញឈ្មោះសិស្ស និងឈ្មោះវគ្គសិក្សា។
    - ប្រើ MySQL Workbench ឬ phpMyAdmin ដើម្បី Run Queries។
 

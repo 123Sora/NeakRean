@@ -2,7 +2,7 @@ import React from 'react';
 import { ChevronRight, Search, Filter } from 'lucide-react';
 // import TypewriterText from '../components/TypeWriterText';
 
-type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'jira'| 'mysql' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology' | 'mis' | 'se'; 
+type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'jira'| 'mysql' | 'postgresql' | 'mongodb' | 'redis' | 'firebase' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology' | 'mis' | 'se'; 
 
 interface Course {
   id: CourseType;
@@ -29,10 +29,10 @@ function HomePage({ onSelectCourse, courses }: HomePageProps) {
   const categories = [
     { id: 'all', name: 'ទាំងអស់', count: courses.length },
     { id: 'concepts', name: 'Concepts', count: 2 },
-    { id: 'frontend', name: 'Frontend', count: 6 },
+    { id: 'frontend', name: 'Frontend', count: 8 },
     { id: 'backend', name: 'Backend', count: 4 },
     { id: 'mobile', name: 'Mobile', count: 6 },
-    { id: 'database', name: 'Database', count: 1 },
+    { id: 'database', name: 'Database', count: 5 },
     { id: 'tools', name: 'Tools', count: 4 },
     { id: 'management', name: 'Management', count: 2 },
   ];
@@ -42,7 +42,7 @@ function HomePage({ onSelectCourse, courses }: HomePageProps) {
     const frontendCourses = ['html', 'css', 'bootstrap', 'tailwind', 'javascript', 'react', 'vue', 'nextjs'];
     const backendCourses = ['nodejs', 'expressjs', 'php', 'laravel'];
     const mobileCourses = ['swift', 'kotlin', 'flutter', 'reactnative', 'ionic', 'xamarin'];
-    const databaseCourses = ['mysql'];
+    const databaseCourses = ['mysql', 'postgresql', 'mongodb', 'redis', 'firebase'];
     const toolsCourses = ['postman', 'github', 'gitlab', 'jira']; 
     const managementCourses = ['mis', 'se'];
 

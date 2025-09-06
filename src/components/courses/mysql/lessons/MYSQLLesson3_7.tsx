@@ -74,18 +74,18 @@ EXPLAIN SELECT * FROM employees WHERE name = 'សុខ';
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ បង្កើត Index</h3>
-<p>បង្កើត Index លើ Column \`category\` នៃ Table \`products\`។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ បង្កើត Index
+បង្កើត Index លើ Column \`category\` នៃ Table \`products\`។
+\`\`\`sql
 CREATE INDEX idx_product_category ON products(category);
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ ប្រើ EXPLAIN</h3>
-<p>វិភាគ Query ដើម្បីពិនិត្យការប្រើ Index។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ ប្រើ EXPLAIN
+វិភាគ Query ដើម្បីពិនិត្យការប្រើ Index។
+\`\`\`sql
 EXPLAIN SELECT * FROM products WHERE category = 'Electronics';
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -272,15 +272,15 @@ EXPLAIN SELECT * FROM products WHERE category = 'Electronics';
 
 **តម្រូវការ:**
 
-1. **បង្កើត Table:**
+**1. បង្កើត Table:**
    - បង្កើត Table \`orders\` ដែលមាន Columns: \`order_id\` (INT, PRIMARY KEY), \`customer_id\` (INT), \`total\` (DECIMAL), \`order_date\` (DATE)។
    - បញ្ចូល ៥ Records ទៅក្នុង \`orders\`។
 
-2. **បង្កើត Indexes:**
+**2. បង្កើត Indexes:**
    - បង្កើត Index \`idx_customer_id\` លើ \`customer_id\`។
    - បង្កើត UNIQUE Index \`idx_order_date\` លើ \`order_date\`។
 
-3. **Test:**
+**3. Test:**
    - Query \`orders\` ដោយប្រើ \`customer_id\` និង \`order_date\`។
    - ប្រើ \`EXPLAIN\` ដើម្បីពិនិត្យការប្រើ Index។
    - លុប \`idx_customer_id\`។

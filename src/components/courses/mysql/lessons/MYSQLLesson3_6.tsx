@@ -100,9 +100,9 @@ DROP TRIGGER after_employee_insert;
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ Trigger សម្រាប់ INSERT</h3>
-<p>បង្កើត Trigger ដើម្បីកត់ត្រា Log នៅពេលបញ្ចូលផលិតផល។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ Trigger សម្រាប់ INSERT
+បង្កើត Trigger ដើម្បីកត់ត្រា Log នៅពេលបញ្ចូលផលិតផល។
+\`\`\`sql
 DELIMITER //
 CREATE TRIGGER after_product_insert 
 AFTER INSERT ON products
@@ -112,12 +112,12 @@ BEGIN
   VALUES ('INSERT', NEW.product_id, NOW());
 END //
 DELIMITER ;
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ Trigger សម្រាប់ UPDATE</h3>
-<p>បង្កើត Trigger ដើម្បីការពារតម្លៃអវិជ្ជមាន។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ Trigger សម្រាប់ UPDATE
+បង្កើត Trigger ដើម្បីការពារតម្លៃអវិជ្ជមាន។
+\`\`\`sql
 DELIMITER //
 CREATE TRIGGER before_product_update 
 BEFORE UPDATE ON products
@@ -128,7 +128,7 @@ BEGIN
   END IF;
 END //
 DELIMITER ;
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -315,16 +315,16 @@ DELIMITER ;
 
 **តម្រូវការ:**
 
-1. **បង្កើត Tables:**
+**1. បង្កើត Tables:**
    - បង្កើត Table \`products\` ដែលមាន Columns: \`product_id\` (INT, PRIMARY KEY), \`name\` (VARCHAR), \`price\` (DECIMAL)។
    - បង្កើត Table \`product_log\` ដែលមាន Columns: \`log_id\` (INT, PRIMARY KEY), \`action\` (VARCHAR), \`product_id\` (INT), \`action_date\` (DATETIME)។
    - បញ្ចូល ៣ Records ទៅក្នុង \`products\`។
 
-2. **បង្កើត Triggers:**
+**2. បង្កើត Triggers:**
    - បង្កើត Trigger \`after_product_insert\` ដើម្បីកត់ត្រា Log នៅពេលបញ្ចូលផលិតផល។
    - បង្កើត Trigger \`before_product_update\` ដើម្បីការពារតម្លៃ \`price\` អវិជ្ជមាន។
 
-3. **Test:**
+**3. Test:**
    - បញ្ចូល Record ថ្មីទៅក្នុង \`products\`។
    - Update \`price\` ទៅជាតម្លៃអវិជ្ជមាន និងតម្លៃវិជ្ជមាន។
    - Query \`product_log\` ដើម្បីពិនិត្យ Log។

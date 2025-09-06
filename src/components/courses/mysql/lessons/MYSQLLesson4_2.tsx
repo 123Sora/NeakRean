@@ -130,9 +130,9 @@ Table: Employees
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ អនុវត្ត 1NF</h3>
-<p>បំប្លែង Table ដែលមាន Repeating Groups ទៅជា 1NF។</p>
-<pre><code class="language-text">
+### ឧទាហរណ៍៖ អនុវត្ត 1NF
+បំប្លែង Table ដែលមាន Repeating Groups ទៅជា 1NF។
+\`\`\`sql
 មុន 1NF:
 Table: Orders
 | order_id | products           |
@@ -147,12 +147,12 @@ Table: Order_Items
 | 1        | Laptop       |
 | 1        | Phone        |
 | 2        | Headphones   |
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ អនុវត្ត 2NF និង 3NF</h3>
-<p>បំប្លែង Table ទៅជា 2NF និង 3NF។</p>
-<pre><code class="language-text">
+### ឧទាហរណ៍៖ អនុវត្ត 2NF និង 3NF
+បំប្លែង Table ទៅជា 2NF និង 3NF។
+\`\`\`sql
 មុន:
 Table: Enrollments
 | student_id | course_id | student_name | course_name | dept_name |
@@ -179,7 +179,7 @@ Table: Enrollments
 | student_id | course_id |
 |------------|-----------|
 | 1          | 101       |
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -344,20 +344,20 @@ Table: Enrollments
 
 **តម្រូវការ:**
 
-1. **Table ដើម (មិនមែន Normalized):**
+**1. Table ដើម (មិនមែន Normalized):**
    - បង្កើត Table \`orders\` ដែលមាន Columns: \`order_id\` (INT, PRIMARY KEY), \`customer_name\` (VARCHAR), \`customer_email\` (VARCHAR), \`product_name\` (VARCHAR), \`product_price\` (DECIMAL), \`order_date\` (DATE)។
    - បញ្ចូល ៣ Records ដែលមាន Repeating Groups។
 
-2. **អនុវត្ត 1NF:**
+**2. អនុវត្ត 1NF:**
    - បំប្លែង \`orders\` ទៅជា 1NF ដោយលុប Repeating Groups។
 
-3. **អនុវត្ត 2NF:**
+**3. អនុវត្ត 2NF:**
    - បំបែក Table ទៅជា Tables ដើម្បីលុប Partial Dependency។
 
-4. **អនុវត្ត 3NF:**
+**4. អនុវត្ត 3NF:**
    - បំបែក Table បន្ថែមទៀតដើម្បីលុប Transitive Dependency។
 
-5. **Test:**
+**5. Test:**
    - Query ដើម្បីទាញ \`customer_name\`, \`product_name\`, និង \`order_date\`។
    - ប្រើ MySQL Workbench ឬ phpMyAdmin ដើម្បី Run Queries។
 

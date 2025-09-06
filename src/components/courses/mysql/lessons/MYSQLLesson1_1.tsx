@@ -75,28 +75,28 @@ Database គឺជាប្រព័ន្ធសម្រាប់រៀបច�
 - Server ដំណើរការ Query និង Return លទ្ធផល។
 `,
   examples: [
-    `
-<h3>ឧទាហរណ៍៖ តារាងនៅក្នុង RDBMS</h3>
-<p>បង្កើតតារាង <code>users</code> ដើម្បីផ្ទុកព័ត៌មានអ្នកប្រើប្រាស់។</p>
-<pre><code class="language-sql">
+    `### ឧទាហរណ៍៖ តារាងនៅក្នុង RDBMS
+**បង្កើតតារាង:** \`users\` ដើម្បីផ្ទុកព័ត៌មានអ្នកប្រើប្រាស់។
+\`\`\`sql
 CREATE TABLE users (
   id INT PRIMARY KEY,
   name VARCHAR(50),
   email VARCHAR(100)
 );
-</code></pre>
+\`\`\`
+
 `,
     `
-<h3>ឧទាហរណ៍៖ ទំនាក់ទំនងរវាង Tables</h3>
-<p>បង្កើតតារាង <code>orders</code> ដែលមាន Foreign Key ភ្ជាប់ទៅ <code>users</code>។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ ទំនាក់ទំនងរវាង Tables
+**បង្កើតតារាង** \`orders\` ដែលមាន Foreign Key ភ្ជាប់ទៅ \`users\` ។
+\`\`\`sql
 CREATE TABLE orders (
   order_id INT PRIMARY KEY,
   user_id INT,
   order_date DATE,
   FOREIGN KEY (user_id) REFERENCES users(id)
 );
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -272,13 +272,13 @@ CREATE TABLE orders (
 
 **តម្រូវការ:**
 
-1. **បង្កើតឯកសារ Markdown:**
+**1. បង្កើតឯកសារ Markdown:**
    - បង្កើត File: \`database_intro.md\`។
    - ពន្យល់អំពីអ្វីជា Database និង RDBMS។
    - ពន្យល់អំពី MySQL និងលក្ខណៈពិសេសរបស់វា។
    - បញ្ចូលឧទាហរណ៍នៃ Table មួយជាមួយ SQL Code។
 
-2. **Test ឯកសារ:**
+**2. Test ឯកសារ:**
    - បើកឯកសារនៅក្នុង Markdown Viewer (ឧ. VS Code ឬ GitHub)។
    - ពិនិត្យថាមាតិកាច្បាស់លាស់ និងគ្មានកំហុស។
 

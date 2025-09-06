@@ -284,8 +284,20 @@ function SEMCourse() {
             <h4 className="font-medium text-red-700 mb-2">ភាសាខ្មែរ (Khmer) 🇰🇭</h4>
             <ul className="space-y-2 text-red-600">
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/playlist?list=PL2Tn6esdV2atkx6E3r4x0w2a2N8w7q6Qy" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">Bro Kithya - Software Engineering in Khmer</span>
+                <a href="https://www.youtube.com/playlist?list=PL2Tn6esdV2aub3qayORDtFAzrnXL-dco7" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Bro Kithya - SE and ITPM</span>
+                  <ChevronRight className="w-4 h-4 ml-1" />
+                </a>
+              </li>
+              <li className="flex items-center space-x-2">
+                <a href="https://www.youtube.com/playlist?list=PL2Tn6esdV2atCd1XZ1F6nTKrNtJG-AFGr" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Bro Kithya - SE and ITPM (2)</span>
+                  <ChevronRight className="w-4 h-4 ml-1" />
+                </a>
+              </li>
+              <li className="flex items-center space-x-2">
+                <a href="https://www.youtube.com/playlist?list=PLSUDaEna-msQ--lKnKJbNP6KNFyIu6fT7" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Vang Samieat - Introduction to Software Engineering</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>
@@ -295,20 +307,20 @@ function SEMCourse() {
             <h4 className="font-medium text-red-700 mb-2">ភាសាអង់គ្លេស (English)</h4>
             <ul className="space-y-2 text-red-600">
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/playlist?list=PLB_X11I8e1xG60U0T12_s3g2Bf6y_n2Xh" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">Software Engineering - MIT OpenCourseWare</span>
+                <a href="https://www.youtube.com/watch?v=IHx9ImEMuzQ&list=PLQ-nEJNYlEV29CBLzIDxcogm6CEZjVad2" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">CS & IT Tutorials by Vrushali 👩‍🎓 - SE 1 : Learn Software Engineering from Scratch |</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/playlist?list=PLmZgY1rXz4r-gI8-W3T6pXh2l0Fw-S-pY" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">Google - Software Engineering and SRE</span>
+                <a href="https://www.youtube.com/playlist?list=PLWPirh4EWFpG2b1L3CL-OAPYcM25jLjXH" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">TutorialsPoint - Software Engineering</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>
               <li className="flex items-center space-x-2">
-                <a href="https://www.youtube.com/playlist?list=PL6V02ZNz0tw59JDxr4Kt9XPM_HO-k8o_W" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                  <span className="text-sm">Andrew Miller - Management Information Systems</span>
+                <a href="https://www.youtube.com/playlist?list=PLzMcBGfZo4-nVu4ANTe7NuU0Ny6_oyQmV" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Tech With Tim - Software Design Basics</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </a>
               </li>

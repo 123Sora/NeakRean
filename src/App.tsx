@@ -21,6 +21,8 @@ import FlutterCourse from './components/courses/flutter/FlutterCourse';
 import SwiftCourse from './components/courses/swift/SwiftCourse';
 import KotlinCourse from './components/courses/kotlin/KotlinCourse';
 import ReactNativeCourse from './components/courses/reactnative/ReactnativeCourse';
+import MISCourse from './components/courses/mis/MISCourse';
+import SEMCourse from './components/courses/sem/SEMCourse'; 
 import ConceptCourse from './components/courses/concept/ConceptCourse';
 import TerminologyCourse from './components/courses/terminology/TerminologyCourse';
 import AboutUs from './components/AboutUs';
@@ -358,9 +360,10 @@ function App() {
         return <FlutterCourse />;
       case 'reactnative':
         return <ReactNativeCourse />;
-
-      // case 'mis':
-      //   return <MIScourse />;
+      case 'mis':
+        return <MISCourse />;
+      case 'se':
+        return <SEMCourse />;
       // case 'se':
       //   return <SEMCourse />;
       default:

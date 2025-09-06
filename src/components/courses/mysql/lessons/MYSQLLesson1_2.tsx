@@ -71,9 +71,9 @@ CREATE TABLE users (
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ បង្កើត Database និង Table</h3>
-<p>បង្កើត Database និង Table ដើម្បីផ្ទុកព័ត៌មាននិស្សិត។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ បង្កើត Database និង Table
+បង្កើត Database និង Table ដើម្បីផ្ទុកព័ត៌មាននិស្សិត។
+\`\`\`sql
 CREATE DATABASE school;
 USE school;
 CREATE TABLE students (
@@ -81,15 +81,15 @@ CREATE TABLE students (
   name VARCHAR(50),
   age INT
 );
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ ប្រើ Command-Line Client</h3>
-<p>ចូលប្រើ MySQL និងបង្ហាញ Databases។</p>
-<pre><code class="language-bash">
+### ឧទាហរណ៍៖ ប្រើ Command-Line Client
+ចូលប្រើ MySQL និងបង្ហាញ Databases។
+\`\`\`sql
 mysql -u root -p
 SHOW DATABASES;
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -265,18 +265,18 @@ SHOW DATABASES;
 
 **តម្រូវការ:**
 
-1. **ដំឡើង XAMPP:**
+**1. ដំឡើង XAMPP:**
    - ទាញយក និងដំឡើង XAMPP។
    - ចាប់ផ្តើម MySQL Module។
 
-2. **ចូលប្រើ phpMyAdmin:**
+**2. ចូលប្រើ phpMyAdmin:**
    - បើក \`http://localhost/phpmyadmin\`។
    - បង្កើត Database ឈ្មោះ \`test_db\`។
 
-3. **បង្កើត Table:**
+**3. បង្កើត Table:**
    - បង្កើត Table \`employees\` ដែលមាន Columns: \`id\` (INT, PRIMARY KEY), \`name\` (VARCHAR), \`department\` (VARCHAR)។
 
-4. **Test:**
+**4. Test:**
    - ប្រើ phpMyAdmin ដើម្បីពិនិត្យ Database និង Table។
 
 **ការណែនាំ:** ប្រើ Browser ដើម្បីចូល phpMyAdmin និងធ្វើតាមជំហាន។

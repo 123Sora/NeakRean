@@ -125,18 +125,18 @@ SELECT * FROM employees LIMIT 5 OFFSET 2;
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ ទាញទិន្នន័យជាមួយ WHERE</h3>
-<p>ទាញ Records ដែល \`price > 50\` ពី Table <code>products</code>។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ ទាញទិន្នន័យជាមួយ WHERE
+ទាញ Records ដែល \`price > 50\` ពី Table \`products\`។
+\`\`\`sql
 SELECT name, price FROM products WHERE price > 50;
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ ប្រើ ORDER BY និង LIMIT</h3>
-<p>ទាញ ៣ Records ដែលមាន \`price\` ខ្ពស់បំផុត។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ ប្រើ ORDER BY និង LIMIT
+ទាញ ៣ Records ដែលមាន \`price\` ខ្ពស់បំផុត។
+\`\`\`sql
 SELECT * FROM products ORDER BY price DESC LIMIT 3;
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -312,18 +312,18 @@ SELECT * FROM products ORDER BY price DESC LIMIT 3;
 
 **តម្រូវការ:**
 
-1. **បង្កើត Table:**
+**1. បង្កើត Table:**
    - បង្កើត Table \`students\` ដែលមាន Columns: \`student_id\` (INT, PRIMARY KEY), \`name\` (VARCHAR), \`age\` (INT), \`grade\` (VARCHAR)។
 
-2. **បញ្ចូលទិន្នន័យ:**
+**2. បញ្ចូលទិន្នន័យ:**
    - បញ្ចូល ៥ Records ទៅក្នុង \`students\`។
 
-3. **ទាញទិន្នន័យ:**
+**3. ទាញទិន្នន័យ:**
    - ទាញ \`name\` និង \`age\` ដែល \`age > 18\`។
    - ទាញ \`grade\` ដែលមិនស្ទួន (\`DISTINCT\`)។
    - ទាញ ២ Records ដែលមាន \`age\` ខ្ពស់បំផុត។
 
-4. **Test:**
+**4. Test:**
    - ប្រើ MySQL Workbench ឬ phpMyAdmin ដើម្បី Run Queries និងពិនិត្យលទ្ធផល។
 
 **ការណែនាំ:** ប្រើ \`SELECT * FROM students\` ដើម្បីពិនិត្យទិន្នន័យ។

@@ -109,24 +109,24 @@ DROP DATABASE company;
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ បង្កើត Table ជាមួយ Constraints</h3>
-<p>បង្កើត Table <code>products</code> ដែលមាន Constraints។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ បង្កើត Table ជាមួយ Constraints
+បង្កើត Table \`products\` ដែលមាន Constraints។
+\`\`\`sql
 CREATE TABLE products (
   product_id INT PRIMARY KEY,
   name VARCHAR(50) NOT NULL,
   price DECIMAL(10,2) CHECK (price > 0),
   category VARCHAR(50) DEFAULT 'General'
 );
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ កែប្រែ Table</h3>
-<p>បន្ថែម Column និងកែប្រែ Column នៅក្នុង Table <code>products</code>។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ កែប្រែ Table
+បន្ថែម Column និងកែប្រែ Column នៅក្នុង Table \`products\`។
+\`\`\`sql
 ALTER TABLE products ADD stock INT;
 ALTER TABLE products MODIFY price DECIMAL(12,2);
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -302,17 +302,17 @@ ALTER TABLE products MODIFY price DECIMAL(12,2);
 
 **តម្រូវការ:**
 
-1. **បង្កើត Database:**
+**1. បង្កើត Database:**
    - បង្កើត Database ឈ្មោះ \`store\`។
 
-2. **បង្កើត Table:**
+**2. បង្កើត Table:**
    - បង្កើត Table \`customers\` ដែលមាន Columns: \`customer_id\` (INT, PRIMARY KEY), \`name\` (VARCHAR, NOT NULL), \`email\` (VARCHAR, UNIQUE), \`balance\` (DECIMAL, DEFAULT 0.00, CHECK balance >= 0)។
 
-3. **កែប្រែ Table:**
+**3. កែប្រែ Table:**
    - បន្ថែម Column \`phone\` (VARCHAR)។
    - កែប្រែ \`balance\` ទៅជា DECIMAL(12,2)។
 
-4. **Test:**
+**4. Test:**
    - ប្រើ MySQL Workbench ឬ phpMyAdmin ដើម្បី Run Commands និងពិនិត្យរចនាសម្ព័ន្ធ។
 
 **ការណែនាំ:** ពិនិត្យ Syntax នៅក្នុង MySQL Documentation។

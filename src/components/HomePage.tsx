@@ -2,7 +2,7 @@ import React from 'react';
 import { ChevronRight, Search, Filter } from 'lucide-react';
 // import TypewriterText from '../components/TypeWriterText';
 
-type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'mysql' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology' | 'mis' | 'se'; 
+type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'jira'| 'mysql' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology' | 'mis' | 'se'; 
 
 interface Course {
   id: CourseType;
@@ -43,7 +43,7 @@ function HomePage({ onSelectCourse, courses }: HomePageProps) {
     const backendCourses = ['nodejs', 'expressjs', 'php', 'laravel'];
     const mobileCourses = ['swift', 'kotlin', 'flutter', 'reactnative', 'ionic', 'xamarin'];
     const databaseCourses = ['mysql'];
-    const toolsCourses = ['postman', 'github', 'gitlab']; 
+    const toolsCourses = ['postman', 'github', 'gitlab', 'jira']; 
     const managementCourses = ['mis', 'se'];
 
     if (conceptCourses.includes(courseId)) return 'concepts';

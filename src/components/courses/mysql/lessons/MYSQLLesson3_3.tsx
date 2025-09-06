@@ -89,24 +89,24 @@ WHERE dept_id IN (SELECT dept_id FROM departments WHERE budget > 10000);
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ Subquery នៅក្នុង WHERE</h3>
-<p>ទាញផលិតផលដែលមានតម្លៃលើសពីតម្លៃមធ្យម។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ Subquery នៅក្នុង WHERE
+ទាញផលិតផលដែលមានតម្លៃលើសពីតម្លៃមធ្យម។
+\`\`\`sql
 SELECT name, price 
 FROM products 
 WHERE price > (SELECT AVG(price) FROM products);
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ Correlated Subquery</h3>
-<p>ទាញអតិថិជនដែលមាន Orders លើសពីតម្លៃមធ្យមនៃ Orders ទាំងអស់។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ Correlated Subquery
+ទាញអតិថិជនដែលមាន Orders លើសពីតម្លៃមធ្យមនៃ Orders ទាំងអស់។
+\`\`\`sql
 SELECT name 
 FROM customers c 
 WHERE EXISTS (SELECT 1 FROM orders o 
               WHERE o.customer_id = c.customer_id 
               AND o.total > (SELECT AVG(total) FROM orders));
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -293,20 +293,20 @@ WHERE EXISTS (SELECT 1 FROM orders o
 
 **តម្រូវការ:**
 
-1. **បង្កើត Tables:**
+**1. បង្កើត Tables:**
    - បង្កើត Table \`employees\` ដែលមាន Columns: \`emp_id\` (INT, PRIMARY KEY), \`name\` (VARCHAR), \`salary\` (DECIMAL), \`dept_id\` (INT)។
    - បង្កើត Table \`departments\` ដែលមាន Columns: \`dept_id\` (INT, PRIMARY KEY), \`name\` (VARCHAR)។
 
-2. **បញ្ចូលទិន្នន័យ:**
+**2. បញ្ចូលទិន្នន័យ:**
    - បញ្ចូល ៤ Records ទៅក្នុង \`employees\`។
    - បញ្ចូល ២ Records ទៅក្នុង \`departments\`។
 
-3. **ទាញទិន្នន័យ:**
+**3. ទាញទិន្នន័យ:**
    - ប្រើ Subquery នៅក្នុង \`WHERE\` ដើម្បីទាញ \`name\` និង \`salary\` ដែល \`salary\` លើសពីមធ្យម។
    - ប្រើ Subquery នៅក្នុង \`FROM\` ដើម្បីទាញ \`dept_name\` និងមធ្យម \`salary\` តាម Department។
    - ប្រើ Correlated Subquery ដើម្បីទាញ \`name\` ដែល \`salary\` លើសពីមធ្យមនៃ Department របស់ខ្លួន។
 
-4. **Test:**
+**4. Test:**
    - ប្រើ MySQL Workbench ឬ phpMyAdmin ដើម្បី Run Queries និងពិនិត្យលទ្ធផល។
 
 **ការណែនាំ:** ប្រើ \`SELECT * FROM employees\` និង \`SELECT * FROM departments\` ដើម្បីពិនិត្យទិន្នន័យ។

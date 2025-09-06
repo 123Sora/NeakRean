@@ -29,7 +29,7 @@ import TerminologyCourse from './components/courses/terminology/TerminologyCours
 import AboutUs from './components/AboutUs';
 import SecurityProvider from './components/SecurityProvider'; 
 
-type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'jira'|   'mysql' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology' | 'mis' | 'se' ;
+type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'jira'|   'mysql' | 'postgresql' | 'mongodb' | 'redis' | 'firebase' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology' | 'mis' | 'se' ;
 
 // Define the Course interface to match HomePage expectations
 interface Course {
@@ -318,7 +318,47 @@ function App() {
   lessons: 16,
   duration: '5-8 ម៉ោង',
   level: 'មធ្យម',
-}
+  },
+  {
+  id: 'postgresql',
+  name: 'PostgreSQL',
+  khmer: 'PostgreSQL Database',
+  icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+  color: 'bg-indigo-600',
+  lessons: 16,
+  duration: '7-9 ម៉ោង',
+  level: 'មធ្យម',
+},
+{
+  id: 'mongodb',
+  name: 'MongoDB',
+  khmer: 'MongoDB Database',
+  icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+  color: 'bg-green-400',
+  lessons: 14,
+  duration: '6-8 ម៉ោង',
+  level: 'មធ្យម',
+},
+{
+  id: 'redis',
+  name: 'Redis',
+  khmer: 'Redis Database',
+  icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg',
+  color: 'bg-red-500',
+  lessons: 12,
+  duration: '4-6 ម៉ោង',
+  level: 'មធ្យម',
+},
+{
+  id: 'firebase',
+  name: 'Firebase',
+  khmer: 'Firebase Platform',
+  icon: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
+  color: 'bg-yellow-200',
+  lessons: 16,
+  duration: '5-7 ម៉ោង',
+  level: 'មធ្យម',
+},
   ];
 
   const renderCurrentCourse = () => {

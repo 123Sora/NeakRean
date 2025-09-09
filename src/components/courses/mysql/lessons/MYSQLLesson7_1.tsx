@@ -97,9 +97,9 @@ JOIN courses c ON e.course_id = c.course_id;
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ បង្កើត និងបញ្ចូលទិន្នន័យ</h3>
-<p>បង្កើត Table និងបញ្ចូលទិន្នន័យសម្រាប់និស្សិត។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ បង្កើត និងបញ្ចូលទិន្នន័យ
+បង្កើត Table និងបញ្ចូលទិន្នន័យសម្រាប់និស្សិត។
+\`\`\`sql
 CREATE TABLE students (
   student_id INT PRIMARY KEY AUTO_INCREMENT,
   name VARCHAR(100) NOT NULL,
@@ -107,17 +107,17 @@ CREATE TABLE students (
 );
 INSERT INTO students (name, email) VALUES
   ('Sok Piseth', 'sok@example.com');
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ Query ជាមួយ JOIN</h3>
-<p>ទាញឈ្មោះនិស្សិត និងវគ្គសិក្សា។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ Query ជាមួយ JOIN
+ទាញឈ្មោះនិស្សិត និងវគ្គសិក្សា។
+\`\`\`sql
 SELECT s.name, c.course_name
 FROM students s
 JOIN enrollments e ON s.student_id = e.student_id
 JOIN courses c ON e.course_id = c.course_id;
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [

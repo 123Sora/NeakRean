@@ -84,20 +84,20 @@ SHOW GRANTS FOR 'sok'@'localhost';
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ បង្កើតអ្នកប្រើប្រាស់ និងផ្តល់សិទ្ធិ</h3>
-<p>បង្កើតអ្នកប្រើប្រាស់ថ្មី និងផ្តល់សិទ្ធិ SELECT នៅលើ Table \`products\`។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ បង្កើតអ្នកប្រើប្រាស់ និងផ្តល់សិទ្ធិ
+បង្កើតអ្នកប្រើប្រាស់ថ្មី និងផ្តល់សិទ្ធិ SELECT នៅលើ Table \`products\`។
+\`\`\`sql
 CREATE USER 'suon'@'localhost' IDENTIFIED BY 'securePass456';
 GRANT SELECT ON shop_db.products TO 'suon'@'localhost';
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ ពិនិត្យ និងដកសិទ្ធិ</h3>
-<p>ពិនិត្យសិទ្ធិ និងដកសិទ្ធិ INSERT។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ ពិនិត្យ និងដកសិទ្ធិ
+ពិនិត្យសិទ្ធិ និងដកសិទ្ធិ INSERT។
+\`\`\`sql
 SHOW GRANTS FOR 'suon'@'localhost';
 REVOKE INSERT ON shop_db.products FROM 'suon'@'localhost';
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -273,15 +273,15 @@ REVOKE INSERT ON shop_db.products FROM 'suon'@'localhost';
 
 **តម្រូវការ:**
 
-1. **បង្កើតអ្នកប្រើប្រាស់:**
+**1. បង្កើតអ្នកប្រើប្រាស់:**
    - បង្កើតអ្នកប្រើប្រាស់ \`analyst\` នៅ \`localhost\` ជាមួយលេខសម្ងាត់ \`dataPass789\`។
    - បង្កើតអ្នកប្រើប្រាស់ \`admin\` នៅ \`%\` ជាមួយលេខសម្ងាត់ \`adminPass123\`។
 
-2. **ផ្តល់សិទ្ធិ:**
+**2. ផ្តល់សិទ្ធិ:**
    - ផ្តល់សិទ្ធិ \`SELECT\` លើ Table \`employees\` ក្នុង Database \`company_db\` ទៅ \`analyst\`។
    - ផ្តល់សិទ្ធិ \`ALL PRIVILEGES\` លើ Database \`company_db\` ទៅ \`admin\`។
 
-3. **Test:**
+**3. Test:**
    - ពិនិត្យសិទ្ធិរបស់ \`analyst\` និង \`admin\` ដោយប្រើ \`SHOW GRANTS\`។
    - ដកសិទ្ធិ \`SELECT\` ពី \`analyst\`។
    - ប្រើ MySQL Workbench ឬ phpMyAdmin ដើម្បី Run Queries។

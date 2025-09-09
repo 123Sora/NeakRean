@@ -72,18 +72,18 @@ mysqlbinlog --start-datetime="2025-01-01 00:00:00" --stop-datetime="2025-01-02 0
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ បម្រុងទុក Database</h3>
-<p>បម្រុងទុក Database \`shop_db\`។</p>
-<pre><code class="language-bash">
+### ឧទាហរណ៍៖ បម្រុងទុក Database
+បម្រុងទុក Database \`shop_db\`។
+\`\`\`sql
 mysqldump -u root -p shop_db > shop_db_backup.sql
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ ស្តារទិន្នន័យ</h3>
-<p>ស្តារទិន្នន័យទៅ Database \`shop_db\`។</p>
-<pre><code class="language-bash">
+### ឧទាហរណ៍៖ ស្តារទិន្នន័យ</h3>
+ស្តារទិន្នន័យទៅ Database \`shop_db\`។
+\`\`\`sql
 mysql -u root -p shop_db < shop_db_backup.sql
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [

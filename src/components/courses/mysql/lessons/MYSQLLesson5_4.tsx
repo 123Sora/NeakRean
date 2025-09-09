@@ -79,26 +79,26 @@ COMMIT;
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ ប្រើ Transaction</h3>
-<p>ផ្ទេរប្រាក់រវាងគណនី។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ ប្រើ Transaction
+ផ្ទេរប្រាក់រវាងគណនី។
+\`\`\`sql
 START TRANSACTION;
 UPDATE accounts SET balance = balance - 100 WHERE account_id = 1;
 UPDATE accounts SET balance = balance + 100 WHERE account_id = 2;
 COMMIT;
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ ប្រើ Savepoint</h3>
-<p>ប្រើ Savepoint ដើម្បី ROLLBACK ទៅចំណុចជាក់លាក់។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ ប្រើ Savepoint
+ប្រើ Savepoint ដើម្បី ROLLBACK ទៅចំណុចជាក់លាក់។
+\`\`\`sql
 START TRANSACTION;
 UPDATE accounts SET balance = balance - 50 WHERE account_id = 1;
 SAVEPOINT savepoint1;
 UPDATE accounts SET balance = balance - 50 WHERE account_id = 1;
 ROLLBACK TO savepoint1;
 COMMIT;
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -285,17 +285,17 @@ COMMIT;
 
 **តម្រូវការ:**
 
-1. **បង្កើត Table:**
+**1. បង្កើត Table:**
    - បង្កើត Table \`accounts\` ដែលមាន Columns: \`account_id\` (INT, PRIMARY KEY), \`balance\` (DECIMAL)។
    - បញ្ចូល ២ Records ដែលមាន \`account_id\` 1 និង 2 ជាមួយ \`balance\` 1000 និង 500។
 
-2. **ប្រើ Transaction:**
+**2. ប្រើ Transaction:**
    - ផ្ទេរប្រាក់ 200 ពី \`account_id\` 1 ទៅ \`account_id\` 2 ដោយប្រើ Transaction។
    - ប្រើ Savepoint បន្ទាប់ពីកាត់ប្រាក់ពី \`account_id\` 1។
    - បន្ថែមការកាត់ប្រាក់ 100 ទៀតពី \`account_id\` 1 ហើយ ROLLBACK ទៅ Savepoint។
    - COMMIT Transaction។
 
-3. **Test:**
+**3. Test:**
    - Query \`SELECT * FROM accounts\` ដើម្បីពិនិត្យ \`balance\`។
    - ប្រើ MySQL Workbench ឬ phpMyAdmin ដើម្បី Run Queries។
 

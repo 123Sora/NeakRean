@@ -122,9 +122,9 @@ GROUP BY c.customer_id;
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ បង្កើត និងបញ្ចូលទិន្នន័យ</h3>
-<p>បង្កើត Table និងបញ្ចូលទិន្នន័យសម្រាប់ផលិតផល។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ បង្កើត និងបញ្ចូលទិន្នន័យ
+បង្កើត Table និងបញ្ចូលទិន្នន័យសម្រាប់ផលិតផល។
+\`\`\`sql
 CREATE TABLE products (
   product_id INT PRIMARY KEY AUTO_INCREMENT,
   name VARCHAR(100) NOT NULL,
@@ -132,19 +132,19 @@ CREATE TABLE products (
 );
 INSERT INTO products (name, price) VALUES
   ('Tablet', 300.00);
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ Query ជាមួយ JOIN និង Aggregation</h3>
-<p>ទាញឈ្មោះអតិថិជន និងចំនួនទឹកប្រាក់សរុប។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ Query ជាមួយ JOIN និង Aggregation
+ទាញឈ្មោះអតិថិជន និងចំនួនទឹកប្រាក់សរុប។
+\`\`\`sql
 SELECT c.name, SUM(p.price * oi.quantity) AS total_spent
 FROM customers c
 JOIN orders o ON c.customer_id = o.customer_id
 JOIN order_items oi ON o.order_id = oi.order_id
 JOIN products p ON oi.product_id = p.product_id
 GROUP BY c.customer_id;
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -245,15 +245,15 @@ GROUP BY c.customer_id;
 
 **តម្រូវការ:**
 
-1. **បង្កើត Tables:**
+**1. បង្កើត Tables:**
    - បង្កើត Tables \`customers\`, \`products\`, \`orders\`, និង \`order_items\` ជាមួយ Constraints សមស្រប។
    - បញ្ចូល 2 Records សម្រាប់ \`customers\`, 2 Records សម្រាប់ \`products\`, 2 Records សម្រាប់ \`orders\`, និង 2 Records សម្រាប់ \`order_items\`។
 
-2. **Query:**
+**2. Query:**
    - Query ដើម្បីទាញឈ្មោះអតិថិជន ឈ្មោះផលិតផល និងចំនួន។
    - Query ដើម្បីគណនាទឹកប្រាក់សរុបរបស់អតិថិជននីមួយៗ។
 
-3. **Test:**
+**3. Test:**
    - ប្រើ MySQL Workbench ឬ phpMyAdmin ដើម្បី Run Queries។
    - ពិនិត្យទិន្នន័យដោយប្រើ \`SELECT * FROM\` សម្រាប់នីមួយៗ។
 

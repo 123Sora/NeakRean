@@ -91,18 +91,18 @@ CREATE TABLE orders (
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ ប្រើ EXPLAIN</h3>
-<p>វិភាគ Query ដើម្បីពិនិត្យការប្រើ Index។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ ប្រើ EXPLAIN
+វិភាគ Query ដើម្បីពិនិត្យការប្រើ Index។
+\`\`\`sql
 EXPLAIN SELECT * FROM products WHERE category = 'Electronics';
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ បង្កើត Index</h3>
-<p>បង្កើត Index លើ Column \`category\`។</p>
-<pre><code class="language-sql">
+### ឧទាហរណ៍៖ បង្កើត Index
+បង្កើត Index លើ Column \`category\`។
+\`\`\`sql
 CREATE INDEX idx_category ON products(category);
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -278,14 +278,14 @@ CREATE INDEX idx_category ON products(category);
 
 **តម្រូវការ:**
 
-1. **បង្កើត Table:**
+**1. បង្កើត Table:**
    - បង្កើត Table \`orders\` ដែលមាន Columns: \`order_id\` (INT, PRIMARY KEY), \`customer_id\` (INT), \`order_date\` (DATE), \`total\` (DECIMAL)។
    - បញ្ចូល ៥ Records។
 
-2. **បង្កើត Index:**
+**2. បង្កើត Index:**
    - បង្កើត Index លើ \`customer_id\`។
 
-3. **Test:**
+**3. Test:**
    - Query \`orders\` ដោយប្រើ \`customer_id\`។
    - ប្រើ \`EXPLAIN\` ដើម្បីពិនិត្យការប្រើ Index។
    - កែ Query ដើម្បីជៀសវាង \`SELECT *\`។

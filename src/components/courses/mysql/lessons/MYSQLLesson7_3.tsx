@@ -100,21 +100,21 @@ app.use((err, req, res, next) => {
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ GET Endpoint</h3>
-<p>ទាញផលិតផលទាំងអស់ពី Table \`products\`។</p>
-<pre><code class="language-javascript">
+### ឧទាហរណ៍៖ GET Endpoint
+ទាញផលិតផលទាំងអស់ពី Table \`products\`។
+\`\`\`python
 app.get('/products', (req, res) => {
   connection.query('SELECT * FROM products', (err, results) => {
     if (err) return res.status(500).json({ error: err.message });
     res.json(results);
   });
 });
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ POST Endpoint</h3>
-<p>បញ្ចូលផលិតផលថ្មីទៅក្នុង Table \`products\`</p>
-<pre><code class="language-javascript">
+### ឧទាហរណ៍៖ POST Endpoint
+បញ្ចូលផលិតផលថ្មីទៅក្នុង Table \`products\`
+\`\`\`python
 app.post('/products', (req, res) => {
   const { name, price } = req.body;
   connection.query(
@@ -126,7 +126,7 @@ app.post('/products', (req, res) => {
     }
   );
 });
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -227,17 +227,17 @@ app.post('/products', (req, res) => {
 
 **តម្រូវការ:**
 
-1. **រៀបចំ Database:**
+**1. រៀបចំ Database:**
    - បង្កើត Database \`api_db\` និង Table \`products\` (product_id, name, price)។
    - បញ្ចូល 2 Records សម្រាប់ \`products\`។
 
-2. **បង្កើត API:**
+**2. បង្កើត API:**
    - បង្កើត Node.js Project ជាមួយ Express។
    - បង្កើត Endpoints:
      - GET \`/products\`: ទាញផលិតផលទាំងអស់។
      - POST \`/products\`: បញ្ចូលផលិតផលថ្មី។
 
-3. **Test:**
+**3. Test:**
    - ប្រើ Postman ដើម្បីTest Endpoints។
    - ពិនិត្យ Errors ប្រសិនបើមាន។
 

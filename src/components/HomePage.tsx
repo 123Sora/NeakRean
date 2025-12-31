@@ -2,7 +2,7 @@ import React from 'react';
 import { ChevronRight, Search, Filter } from 'lucide-react';
 // import TypewriterText from '../components/TypeWriterText';
 
-type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'jira'| 'mysql' | 'postgresql' | 'mongodb' | 'redis' | 'firebase' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology' | 'mis' | 'se'; 
+type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'jira'| 'mysql' | 'postgresql' | 'mongodb' | 'redis' | 'firebase' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology' | 'mis' | 'se' | 'computeros'; 
 
 interface Course {
   id: CourseType;
@@ -35,6 +35,7 @@ function HomePage({ onSelectCourse, courses }: HomePageProps) {
     { id: 'database', name: 'Database', count: 5 },
     { id: 'tools', name: 'Tools', count: 4 },
     { id: 'management', name: 'Management', count: 2 },
+    { id: 'cybersecurity', name: 'Cybersecurity', count: 2 },
   ];
 
   const getCourseCategory = (courseId: string) => {
@@ -45,6 +46,7 @@ function HomePage({ onSelectCourse, courses }: HomePageProps) {
     const databaseCourses = ['mysql', 'postgresql', 'mongodb', 'redis', 'firebase'];
     const toolsCourses = ['postman', 'github', 'gitlab', 'jira']; 
     const managementCourses = ['mis', 'se'];
+    const cyberCourses = ['computeros'];
 
     if (conceptCourses.includes(courseId)) return 'concepts';
     if (frontendCourses.includes(courseId)) return 'frontend';
@@ -53,6 +55,7 @@ function HomePage({ onSelectCourse, courses }: HomePageProps) {
     if (databaseCourses.includes(courseId)) return 'database';
     if (toolsCourses.includes(courseId)) return 'tools';
     if (managementCourses.includes(courseId)) return 'management';
+    if (cyberCourses.includes(courseId)) return 'cybersecurity';
     return 'all';
   };
 

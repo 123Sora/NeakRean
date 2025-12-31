@@ -112,10 +112,9 @@ try {
 **គន្លឹះ:** ប្រើ PDO សម្រាប់ភាពបត់បែន និង Prepared Statements សម្រាប់សុវត្ថិភាព។
 `,
   examples: [
-    `
-<h3>ឧទាហរណ៍៖ ភ្ជាប់ និង Query (mysqli)</h3>
-<p>ភ្ជាប់ទៅ Database និងទាញទិន្នន័យពី Table \`products\`។</p>
-<pre><code class="language-php">
+    `### ឧទាហរណ៍៖ ភ្ជាប់ និង Query (mysqli)
+ភ្ជាប់ទៅ Database និងទាញទិន្នន័យពី Table \`products\`។
+\`\`\`sql
 <?php
 $conn = new mysqli('localhost', 'root', 'password', 'shop_db');
 if ($conn->connect_error) {
@@ -127,12 +126,11 @@ while ($row = $result->fetch_assoc()) {
 }
 $conn->close();
 ?>
-</code></pre>
+\`\`\`
 `,
-    `
-<h3>ឧទាហរណ៍៖ បញ្ចូលទិន្នន័យ (PDO)</h3>
-<p>បញ្ចូល Product ថ្មីទៅក្នុង Table \`products\`។</p>
-<pre><code class="language-php">
+    `### ឧទាហរណ៍៖ បញ្ចូលទិន្នន័យ (PDO)
+បញ្ចូល Product ថ្មីទៅក្នុង Table \`products\`។
+\`\`\`sql
 <?php
 try {
   $pdo = new PDO('mysql:host=localhost;dbname=shop_db', 'root', 'password');
@@ -144,7 +142,7 @@ try {
   echo 'Error: ' . $e->getMessage();
 }
 ?>
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -245,14 +243,14 @@ try {
 
 **តម្រូវការ:**
 
-1. **ភ្ជាប់ Database:**
+**1. ភ្ជាប់ Database:**
    - បង្កើត PHP File ដើម្បីភ្ជាប់ទៅ Database \`shop_db\` ដោយប្រើ PDO។
 
-2. **ប្រតិបត្តិ Queries:**
+**2. ប្រតិបត្តិ Queries:**
    - Query \`SELECT * FROM products\` ដើម្បីបង្ហាញទិន្នន័យ។
    - បញ្ចូល Product ថ្មីជាមួយ \`name\` ជា "Tablet" និង \`price\` ជា 300 ដោយប្រើ Prepared Statement។
 
-3. **Test:**
+**3. Test:**
    - បង្ហាញ Results នៅក្នុង Browser។
    - ពិនិត្យ Errors ប្រសិនបើមាន។
    - ប្រើ XAMPP ឬ WAMP ដើម្បី Run PHP Code។

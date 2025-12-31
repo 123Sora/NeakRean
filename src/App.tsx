@@ -26,10 +26,11 @@ import MISCourse from './components/courses/mis/MISCourse';
 import SEMCourse from './components/courses/sem/SEMCourse'; 
 import ConceptCourse from './components/courses/concept/ConceptCourse';
 import TerminologyCourse from './components/courses/terminology/TerminologyCourse';
+import CybersecurityCourse from './components/courses/computeros/ComputerOsCourse';
 import AboutUs from './components/AboutUs';
 import SecurityProvider from './components/SecurityProvider'; 
 
-type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'jira'|   'mysql' | 'postgresql' | 'mongodb' | 'redis' | 'firebase' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology' | 'mis' | 'se' ;
+type CourseType = 'home' | 'about' | 'html' | 'css' | 'bootstrap' | 'tailwind' | 'javascript' | 'react' | 'vue' | 'nextjs' | 'postman' | 'github' | 'gitlab' | 'jira'|   'mysql' | 'postgresql' | 'mongodb' | 'redis' | 'firebase' | 'nodejs' | 'expressjs' | 'php' | 'laravel' | 'swift' | 'kotlin' | 'flutter' | 'reactnative' | 'ionic' | 'xamarin' | 'concept' | 'terminology' | 'mis' | 'se' | 'computeros' ;
 
 // Define the Course interface to match HomePage expectations
 interface Course {
@@ -359,7 +360,16 @@ function App() {
   duration: '5-7 ម៉ោង',
   level: 'មធ្យម',
 },
-  ];
+{
+  id: 'computeros',
+  name: 'Computer & OS Basics',
+  khmer: 'មូលដ្ឋានគ្រឹះកុំព្យូទ័រ និង OS',
+  icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg',  color: 'bg-slate-700',
+  lessons: 14,
+  duration: '8-10 ម៉ោង',
+  level: 'បឋម', // Essential/Foundation
+},
+];
 
   const renderCurrentCourse = () => {
     switch (currentCourse) {
@@ -416,7 +426,11 @@ function App() {
       case 'mis':
         return <MISCourse />;
       case 'se':
-        return <SEMCourse />;
+        return <SEMCourse />
+      case 'computeros': 
+        return <CybersecurityCourse />;
+      // case 'concept':
+      //   return <ConceptCourse />;
       // case 'se':
       //   return <SEMCourse />;
       default:

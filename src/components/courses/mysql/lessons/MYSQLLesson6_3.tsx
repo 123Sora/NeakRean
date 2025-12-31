@@ -99,9 +99,9 @@ except mysql.connector.Error as err:
 `,
   examples: [
     `
-<h3>ឧទាហរណ៍៖ ភ្ជាប់ និង Query</h3>
-<p>ភ្ជាប់ទៅ Database និងទាញទិន្នន័យពី Table \`products\`។</p>
-<pre><code class="language-python">
+### ឧទាហរណ៍៖ ភ្ជាប់ និង Query
+ភ្ជាប់ទៅ Database និងទាញទិន្នន័យពី Table products។
+\`\`\`sql
 import mysql.connector
 
 try:
@@ -120,12 +120,12 @@ except mysql.connector.Error as err:
   print(f'Error: {err}')
 finally:
   connection.close()
-</code></pre>
+\`\`\`
 `,
     `
-<h3>ឧទាហរណ៍៖ បញ្ចូលទិន្នន័យ</h3>
-<p>បញ្ចូល Product ថ្មីទៅក្នុង Table \`products\`។</p>
-<pre><code class="language-python">
+### ឧទាហរណ៍៖ បញ្ចូលទិន្នន័យ
+បញ្ចូល Product ថ្មីទៅក្នុង Table \`products\`។
+\`\`\`python
 try:
   cursor = connection.cursor(prepared=True)
   cursor.execute('INSERT INTO products (name, price) VALUES (%s, %s)', ('Phone', 500))
@@ -153,7 +153,7 @@ except mysql.connector.Error as err:
       question: 'តើ Method ណាដែលប្រើដើម្បីភ្ជាប់ទៅ MySQL?',
       options: ['connect()', 'cursor()', 'execute()', 'commit()'],
       correct: 0,
-      explanation: '`connect()` ប្រើសម្រាប់ភ្ជាប់ទៅ MySQL�।'
+      explanation: '`connect()` ប្រើសម្រាប់ភ្ជាប់ទៅ MySQL'
     },
     {
       question: 'តើ `cursor()` ប្រើសម្រាប់អ្វី?',
@@ -171,7 +171,7 @@ except mysql.connector.Error as err:
       question: 'តើ Prepared Statements មានអត្ថប្រយោជន៍អ្វី?',
       options: ['បង្កើនល្បឿន Query', 'ការពារ SQL Injection', 'បង្កើត Database', 'លុប Table'],
       correct: 1,
-      explanation: 'Prepared Statements ការពារ SQL Injection�।'
+      explanation: 'Prepared Statements ការពារ SQL Injection'
     },
     {
       question: 'តើ `fetchall()` ត្រឡប់អ្វី?',

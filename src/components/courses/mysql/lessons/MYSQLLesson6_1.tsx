@@ -117,10 +117,9 @@ connection.query('SELECT * FROM nonexistent_table', (err, results) => {
 **គន្លឹះ:** ប្រើ \`mysql2/promise\` សម្រាប់ Async/Await Syntax ដើម្បីគ្រប់គ្រង Queries កាន់តែងាយស្រួល។
 `,
   examples: [
-    `
-<h3>ឧទាហរណ៍៖ ភ្ជាប់ និង Query</h3>
-<p>ភ្ជាប់ទៅ Database និងទាញទិន្នន័យពី Table \`products\`។</p>
-<pre><code class="language-javascript">
+    `### ឧទាហរណ៍៖ ភ្ជាប់ និង Query
+ភ្ជាប់ទៅ Database និងទាញទិន្នន័យពី Table \`products\`។
+\`\`\`sql
 const mysql = require('mysql2');
 const connection = mysql.createConnection({
   host: 'localhost',
@@ -133,12 +132,11 @@ connection.query('SELECT * FROM products', (err, results) => {
   if (err) throw err;
   console.log(results);
 });
-</code></pre>
+\`\`\`
 `,
-    `
-<h3>ឧទាហរណ៍៖ បញ្ចូលទិន្នន័យ</h3>
-<p>បញ្ចូល Record ថ្មីទៅក្នុង Table \`products\`។</p>
-<pre><code class="language-javascript">
+    `### ឧទាហរណ៍៖ បញ្ចូលទិន្នន័យ
+បញ្ចូល Record ថ្មីទៅក្នុង Table \`products\`។
+\`\`\`sql
 connection.query(
   'INSERT INTO products (name, price) VALUES (?, ?)',
   ['Laptop', 1200],
@@ -147,7 +145,7 @@ connection.query(
     console.log('Inserted:', results.affectedRows);
   }
 );
-</code></pre>
+\`\`\`
 `
   ],
   quiz: [
@@ -248,15 +246,15 @@ connection.query(
 
 **តម្រូវការ:**
 
-1. **ដំឡើង និងភ្ជាប់:**
+**1. ដំឡើង និងភ្ជាប់:**
    - បង្កើត Project ថ្មី និងដំឡើង \`mysql2\`។
    - ភ្ជាប់ទៅ Database \`shop_db\`។
 
-2. **ប្រតិបត្តិ Queries:**
+**2. ប្រតិបត្តិ Queries:**
    - Query \`SELECT * FROM products\` ដើម្បីបង្ហាញទិន្នន័យ។
    - បញ្ចូល Product ថ្មីជាមួយ \`name\` ជា "Phone" និង \`price\` ជា 500។
 
-3. **Test:**
+**3. Test:**
    - បង្ហាញ Results នៃ Query នៅក្នុង Console។
    - ពិនិត្យ Errors ប្រសិនបើមាន។
    - ប្រើ Node.js CLI ឬ VS Code ដើម្បី Run Code។

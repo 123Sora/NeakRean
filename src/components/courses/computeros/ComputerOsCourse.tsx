@@ -19,12 +19,12 @@ import Lesson3_2Content from '../computeros/lessons/COLesson3_2'; // Essential C
 import Lesson3_3Content from '../computeros/lessons/COLesson3_3'; // Permissions & Sudo
 
 // --- Section 4: Process & Memory ---
-// import Lesson4_1Content from '../computeros/lessons/Lesson4_1'; // Process Management
-// import Lesson4_2Content from '../computeros/lessons/Lesson4_2'; // Stack vs Heap
+import Lesson4_1Content from '../computeros/lessons/COLesson4_1'; // Process Management
+import Lesson4_2Content from '../computeros/lessons/COLesson4_2'; // Stack vs Heap
 
 // --- Section 5: Virtualization ---
-// import Lesson5_1Content from '../computeros/lessons/Lesson5_1'; // VMware & VirtualBox
-// import Lesson5_2Content from '../computeros/lessons/Lesson5_2'; // Virtual Networking
+import Lesson5_1Content from '../computeros/lessons/COLesson5_1'; // VMware & VirtualBox
+import Lesson5_2Content from '../computeros/lessons/COLesson5_2'; // Virtual Networking
 
 function ComputerOSCourse() {
   const [selectedLesson, setSelectedLesson] = useState<string | null>(null);
@@ -64,16 +64,16 @@ function ComputerOSCourse() {
       id: 'section-4',
       title: 'ផ្នែកទី ៤: Process & Memory Management',
       lessons: [
-        // { id: 'os-lesson-4-1', title: 'ការគ្រប់គ្រង Process (Lifecycle & Threads)', ...Lesson4_1Content },
-        // { id: 'os-lesson-4-2', title: 'Memory Architecture (Stack vs. Heap)', ...Lesson4_2Content },
+        { id: 'os-lesson-4-1', ...Lesson4_1Content },
+        { id: 'os-lesson-4-2', ...Lesson4_2Content },
       ] as Lesson[],
     },
     {
       id: 'section-5',
       title: 'ផ្នែកទី ៥: Virtualization និង Lab Setup',
       lessons: [
-        // { id: 'os-lesson-5-1', title: 'Hypervisors (VMware vs. VirtualBox)', ...Lesson5_1Content },
-        // { id: 'os-lesson-5-2', title: 'Networking VMs (NAT, Bridged, Host-Only)', ...Lesson5_2Content },
+        { id: 'os-lesson-5-1',...Lesson5_1Content },
+        { id: 'os-lesson-5-2', ...Lesson5_2Content },
       ] as Lesson[],
     },
   ];

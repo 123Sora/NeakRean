@@ -14,9 +14,9 @@ import Lesson2_2Content from '../computeros/lessons/COLesson2_2'; // Event Viewe
 import Lesson2_3Content from '../computeros/lessons/COLesson2_3'; // PowerShell
 
 // --- Section 3: Linux Command Line ---
-// import Lesson3_1Content from '../computeros/lessons/Lesson3_1'; // Linux FHS
-// import Lesson3_2Content from '../computeros/lessons/Lesson3_2'; // Essential Commands
-// import Lesson3_3Content from '../computeros/lessons/Lesson3_3'; // Permissions & Sudo
+import Lesson3_1Content from '../computeros/lessons/COLesson3_1'; // Linux FHS
+import Lesson3_2Content from '../computeros/lessons/COLesson3_2'; // Essential Commands
+import Lesson3_3Content from '../computeros/lessons/COLesson3_3'; // Permissions & Sudo
 
 // --- Section 4: Process & Memory ---
 // import Lesson4_1Content from '../computeros/lessons/Lesson4_1'; // Process Management
@@ -55,9 +55,9 @@ function ComputerOSCourse() {
       id: 'section-3',
       title: 'ផ្នែកទី ៣: ការប្រើប្រាស់ Linux Command Line',
       lessons: [
-        // { id: 'os-lesson-3-1', title: 'Linux Filesystem Hierarchy (FHS)', ...Lesson3_1Content },
-        // { id: 'os-lesson-3-2', title: 'Essential Commands (Navigation & Manipulation)', ...Lesson3_2Content },
-        // { id: 'os-lesson-3-3', title: 'User Permissions & Privilege Escalation (Sudo)', ...Lesson3_3Content },
+        { id: 'os-lesson-3-1', ...Lesson3_1Content },
+        { id: 'os-lesson-3-2', ...Lesson3_2Content },
+        { id: 'os-lesson-3-3', ...Lesson3_3Content },
       ] as Lesson[],
     },
     {

@@ -9,9 +9,9 @@ import Lesson1_2Content from '../computeros/lessons/COLesson1_2'; // Boot Proces
 import Lesson1_3Content from '../computeros/lessons/COLesson1_3'; // Binary & Hex
 
 // --- Section 2: Windows Administration ---
-// import Lesson2_1Content from '../computeros/lessons/Lesson2_1'; // Windows Registry
-// import Lesson2_2Content from '../computeros/lessons/Lesson2_2'; // Event Viewer
-// import Lesson2_3Content from '../computeros/lessons/Lesson2_3'; // PowerShell
+import Lesson2_1Content from '../computeros/lessons/COLesson2_1'; // Windows Registry
+import Lesson2_2Content from '../computeros/lessons/COLesson2_2'; // Event Viewer
+import Lesson2_3Content from '../computeros/lessons/COLesson2_3'; // PowerShell
 
 // --- Section 3: Linux Command Line ---
 // import Lesson3_1Content from '../computeros/lessons/Lesson3_1'; // Linux FHS
@@ -46,9 +46,9 @@ function ComputerOSCourse() {
       id: 'section-2',
       title: 'ផ្នែកទី ២: ប្រព័ន្ធប្រតិបត្តិការ Windows',
       lessons: [
-        // { id: 'os-lesson-2-1', title: 'Windows Registry និង System Configuration', ...Lesson2_1Content },
-        // { id: 'os-lesson-2-2', title: 'ការគ្រប់គ្រង Windows Services និង Event Viewer', ...Lesson2_2Content },
-        // { id: 'os-lesson-2-3', title: 'PowerShell Basics សម្រាប់ Security', ...Lesson2_3Content },
+        { id: 'os-lesson-2-1', ...Lesson2_1Content },
+        { id: 'os-lesson-2-2', ...Lesson2_2Content },
+        { id: 'os-lesson-2-3', ...Lesson2_3Content },
       ] as Lesson[],
     },
     {

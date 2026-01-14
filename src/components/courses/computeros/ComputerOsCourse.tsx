@@ -185,31 +185,106 @@ function ComputerOSCourse() {
       </div>
 
       {/* Resources Section */}
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
-          <h3 className="text-lg font-semibold text-blue-800 mb-3 flex items-center space-x-2">
-            <BookOpen className="w-5 h-5" />
-            <span>ឯកសារយោង (Resources)</span>
-          </h3>
-          <ul className="space-y-2 text-blue-700 text-sm">
-            <li>• Linux Journey (linuxjourney.com)</li>
-            <li>• Microsoft Documentation - Windows Internals</li>
-            <li>• CompTIA A+ Study Guide</li>
-          </ul>
-        </div>
-
-        <div className="bg-red-50 border border-red-200 rounded-xl p-6">
-          <h3 className="text-lg font-semibold text-red-800 mb-3 flex items-center space-x-2">
-            <Youtube className="w-5 h-5" />
-            <span>បណ្តាញបង្រៀន (Channels)</span>
-          </h3>
-          <ul className="space-y-2 text-red-700 text-sm">
-            <li>• NetworkChuck (Linux & Virtualization)</li>
-            <li>• PowerCert Animated Videos (Hardware)</li>
-            <li>• Eli the Computer Guy (OS Basics)</li>
-          </ul>
-        </div>
+      <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
+        <h3 className="text-lg font-semibold text-blue-800 mb-3 flex items-center space-x-2">
+          <BookOpen className="w-5 h-5" />
+          <span>ឯកសារយោង (Documentation)</span>
+        </h3>
+        <ul className="space-y-2 text-blue-700">
+          <li className="flex items-center space-x-2">
+            <a href="https://linuxjourney.com/" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+              <span className="text-sm">Linux Journey - Learn Linux for Beginners</span>
+              <ChevronRight className="w-4 h-4 ml-1" />
+            </a>
+          </li>
+          <li className="flex items-center space-x-2">
+            <a href="https://learn.microsoft.com/en-us/sysinternals/resources/windows-internals/" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+              <span className="text-sm">Microsoft Docs - Windows Internals</span>
+              <ChevronRight className="w-4 h-4 ml-1" />
+            </a>
+          </li>
+          <li className="flex items-center space-x-2">
+            <a href="https://www.tutorialspoint.com/operating_system/index.htm" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+              <span className="text-sm">tutorialspoint - Operating System Tutorial </span>
+              <ChevronRight className="w-4 h-4 ml-1" />
+            </a>
+          </li>
+          <li className="flex items-center space-x-2">
+            <a href="https://www.netacad.com/courses/operating-systems-basics?courseLang=en-US" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+              <span className="text-sm">cisco - Operating Systems Basics</span>
+              <ChevronRight className="w-4 h-4 ml-1" />
+            </a>
+          </li>
+          <li className="flex items-center space-x-2">
+            <a href="https://www.comptia.org/certifications/a" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+              <span className="text-sm">CompTIA A+ Study Guide & Resources</span>
+              <ChevronRight className="w-4 h-4 ml-1" />
+            </a>
+          </li>
+        </ul>
       </div>
+
+      {/* YouTube Tutorials */}
+      <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-6">
+        <h3 className="text-lg font-semibold text-red-800 mb-3 flex items-center space-x-2">
+          <Youtube className="w-5 h-5" />
+          <span>វីដេអូបង្រៀន (YouTube Tutorials)</span>
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <h4 className="font-medium text-red-700 mb-2">ភាសាខ្មែរ (Khmer) 🇰🇭</h4>
+            <ul className="space-y-2 text-red-600">
+              <li className="flex items-center space-x-2">
+                <a href="https://www.youtube.com/playlist?list=PLO0WNX275nOQAmge6Zg0vV0I8f5WvAVUv" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Menghieng Tips - Computer Architecture</span>
+                  <ChevronRight className="w-4 h-4 ml-1" />
+                </a>
+              </li>
+              <li className="flex items-center space-x-2">
+                <a href="https://www.youtube.com/watch?v=KwrLegnXqDg&list=PLSUDaEna-msQFFIVmAgQXsqlgWDCyE4vX&index=1" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Vang Samieat - Introduction to computer science ( part1 )</span>
+                  <ChevronRight className="w-4 h-4 ml-1" />
+                </a>
+              </li>
+              <li className="flex items-center space-x-2">
+                <a href="https://www.youtube.com/watch?v=ZSCxQOg7nW0&list=PLSUDaEna-msQFFIVmAgQXsqlgWDCyE4vX&index=2" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Vang Samieat - Introduction to computer science ( part2 )</span>
+                  <ChevronRight className="w-4 h-4 ml-1" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-medium text-red-700 mb-2">ភាសាអង់គ្លេស (English)</h4>
+            <ul className="space-y-2 text-red-600">
+              <li className="flex items-center space-x-2">
+                <a href="https://www.youtube.com/@NetworkChuck" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">NetworkChuck - Linux & Virtualization</span>
+                  <ChevronRight className="w-4 h-4 ml-1" />
+                </a>
+              </li>
+              <li className="flex items-center space-x-2">
+                <a href="https://www.youtube.com/playlist?list=PL7zRJGi6nMRzg0LdsR7F3olyLGoBcIvvg" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">PowerCert Animated - Hardware & Networking</span>
+                  <ChevronRight className="w-4 h-4 ml-1" />
+                </a>
+              </li>
+              <li className="flex items-center space-x-2">
+                <a href="https://www.youtube.com/playlist?list=PLBlnK6fEyqRhDsKg2oXhVuN5z_1ysjJyg" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Neso Academy - Basics of OS</span>
+                  <ChevronRight className="w-4 h-4 ml-1" />
+                </a>
+              </li>
+              <li className="flex items-center space-x-2">
+                <a href="https://www.youtube.com/watch?v=iJ01FDCoK7E" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                  <span className="text-sm">Hank Hackerson- Linux+ (XK0-005 - 2024) Command Line Labs Pt.1</span>
+                  <ChevronRight className="w-4 h-4 ml-1" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>  
 
       {/* Learning Tips */}
       <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
